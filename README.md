@@ -28,7 +28,7 @@ Dealer methods are invoked by the main loop to set up a game and play it out.
 
 ### `Player`
 The `Player` class holds the lists of *stack* and *points* cards.
-  ##### `Player` methods
+##### `Player` methods
   - `catch(card)` adds the passed card to their *points* and clears their *stack*
   - `hit(card)` adds the card to their *stack*
   - `points()` returns the list of the cards in their *points*
@@ -39,5 +39,5 @@ The `Player` class holds the lists of *stack* and *points* cards.
 
 ### `Strategy`
 You write a `Strategy` class to compete with those written by other players.  The `Strategy` is initialized with its own `Player` as the sole argument.  The `Strategy` should probably ask the `Dealer` some questions about the state of the game and the decide to hit or which card it would like to fold for.
-  ##### `Strategy` methods
+##### `Strategy` methods
   - `play(dealer)` should return `(playerIndex, card)` to fold for a specific card, `"fold"` to take the "best" card available, and any other value to hit.
