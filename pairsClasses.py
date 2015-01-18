@@ -13,6 +13,34 @@ class Information:
     """
     def __init__(self):
         self.deck = []
+        self.discards = []
+        self.players = []
+
+    def inPoints(self):
+        try:
+            return self.allPoints
+        except NameError:
+            self.allPoints = []
+            for player in self.Players:
+                self.allPoints += player._pointsList
+            return self.allPoints
+
+    def inStacks(self):
+        try:
+            return self.allStacks
+        except NameError:
+            self.allStacks= []
+            for player in self.Players:
+                self.allPoints += list(player._stackSet)
+            return self.allPoints
+
+    def bestFold(self):
+        smallest = min(self.inStacks())
+        best = []
+        for i in range(len(self.players)):
+            if smallest in self.Players[i].inStack():
+                best += (i, smallest)
+        return best
 
 class Player:
     """This holds information about the cards that a player has.
