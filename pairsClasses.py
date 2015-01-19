@@ -15,6 +15,7 @@ class Information:
         self.deck = []
         self.discards = []
         self.players = []
+        self.currentIndex = 0 # Dealer.deal will set this properly
 
     def bestFold(self):
         smallest = min(self.inStacks())
@@ -62,6 +63,7 @@ class Player:
     def __init__(self):
         self.stack = []
         self.points = []
+        self.strategy = SimpletonStrategy()
 
     def catch(self, card):
         self.stack = []
