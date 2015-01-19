@@ -65,6 +65,9 @@ False
 >>> d.vPrint('Hi there') # print arguments when verbose is true
 Hi there
 
+>>> d.play()
+
+
 """
 
 import doctest
