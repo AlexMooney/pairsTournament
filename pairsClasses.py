@@ -30,29 +30,41 @@ class Dealer:
         50
 
         """
-        from random import shuffle
-
-        shuffle(self.gameState.deck)
-        self.gameState.deck = self.gameState.deck[N:]
+        from random import choice
+        for i in range(N):
+            self.gameState.deck.remove(choice(self.gameState.deck))
 
     def deal(self):
-        from random import shuffle
-        shuffle(self.gameState.deck)
 
-        player_tuples = []
+        self.burn()
         for player in self.gameState.players:
-            new_card = self.gameState.deck.pop(0)
-            player.hit(new_card)
-            player_tuples.append([player, new_card])
+            self.gameState.discards.append(player.stack)
+            new_card = self.gameState.deck.draw()
+            player.stack = [new_card]
 
-        cardlist = [player_tuple[1] for player_tuple in player_tuples]
-        while cardlist.count(min(cardlist)) != 1:
-            for player_tuple in player_tuples:
-                if player_tuple[1] == min(cardlist):
-                    if self.gameState.deck[0] == min(cardlist):
-                        
-                    new_card = self.gameState.deck.pop(0)
-                    player_tuple[0].hit(new_card)
+        cardlist = [sum(player.stack) for player in min_players]
+        min_players = [player for player in self.gameState.players
+                       if sum(player.stack) == min(cardlist)]
+
+
+        while len(min_players) != 1:
+            for player in list(min_players):
+                if sum(player.stack) != min(cardlist):
+                    min_players.remove(player)
+                else:
+                    player.hit(self.gameState.draw())
+                    while player.whichPair() != False:
+                        self.gameState.discards.append(player.stack.pop(-1))
+                        player.hit(self.gameState.draw())
+            cardlist = [sum(player.stack) for player in min_players]
+
+        global start_player
+        start_player = min_player[0]
+
+    def play(self):
+        highest_score = max(int(60 / N) + 1, 11)
+
+
 
 
 
