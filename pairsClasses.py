@@ -16,6 +16,7 @@ class Dealer:
 
         self.gameState = Information()
         self.gameState.noPlayers = noPlayers
+        self.verbose = False
         for n in range(self.gameState.noPlayers):
             self.gameState.players.append(Player())
 
@@ -98,6 +99,9 @@ class Dealer:
 
         return ((self.gameState.currentIndex - 1) % self.gameState.noPlayers)+1
 
+    def vPrint(self, *args):
+        if self.verbose:
+            print(*args)
 
 class Information:
     """This the the game state information provided to Strategy classes to make
