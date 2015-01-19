@@ -29,13 +29,13 @@ The `Information` class is passed to the `Strategy` classes on their turn and co
 The `Dealer` has the master copy of `Information` which is the source of truth for the game state.
 The master `Information` is deep copied before being passed to the `Strategy` classes so that they can manipulate it without affecting the game state.
 #### `Information` methods
+- `bestFold()` returns a list of tuples `(playerIndex, card)` for the smallest card currently showing.
 - `deck` is the list of all cards that have not entered play.
 - `discards` is the list of all seen cards in the discard pile.
+- `draw()` pulls a random card from the `deck` and handles reshuffling the discard pile, if needed.
 - `inPoints()` returns list of all cards currently in points.
 - `inStacks()` returns list of all cards currently in a stack.
 - `players` is the list of players in play order.
-- `bestFold()` returns a list of tuples `(playerIndex, card)` for the smallest card currently showing.
-
 
 ### `Player`
 The `Player` class holds the lists of *stack* and *points* cards.

@@ -16,6 +16,28 @@ class Information:
         self.discards = []
         self.players = []
 
+    def bestFold(self):
+        smallest = min(self.inStacks())
+        best = []
+        for i in range(len(self.players)):
+            if smallest in self.Players[i].inStack():
+                best += (i, smallest)
+        return best
+
+    def draw(self):
+        from random import choice
+        if len(self.deck) == 0: # shuffle
+            self.deck = []
+            for i in range(1, 11):
+                self.deck += [i] * i
+            for i in self.inPoints() + self.inStacks():
+                self.deck.remove(i)
+            self.deck.burn()
+            self.discards = []
+        card = choice(deck)
+        deck.remove(card)
+        return card
+
     def inPoints(self):
         try:
             return self.allPoints
@@ -33,14 +55,6 @@ class Information:
             for player in self.Players:
                 self.allPoints += list(player._stackSet)
             return self.allPoints
-
-    def bestFold(self):
-        smallest = min(self.inStacks())
-        best = []
-        for i in range(len(self.players)):
-            if smallest in self.Players[i].inStack():
-                best += (i, smallest)
-        return best
 
 class Player:
     """This holds information about the cards that a player has.
