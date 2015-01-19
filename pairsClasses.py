@@ -43,10 +43,10 @@ class Dealer:
         self.burn()
         for player in self.gameState.players:
             self.gameState.discards.append(player.stack)
-            new_card = self.gameState.deck.draw()
+            new_card = self.gameState.draw()
             player.stack = [new_card]
 
-        cardList = [sum(player.stack) for player in minPlayers]
+        cardList = [sum(player.stack) for player in self.gameState.players]
         minPlayers = [player for player in self.gameState.players
                        if sum(player.stack) == min(cardList)]
 
@@ -68,30 +68,35 @@ class Dealer:
     def play(self):
         from copy import deepcopy
         self.deal() # should be called by Tournament?
-        highestScore = max(int(60 / self.gameState.players) + 1, 11)
+        highestScore = max(int(60 / self.gameState.noPlayers) + 1, 11)
 
         allScores = [player.getScore() for player in self.gameState.players]
 
         while max(allScores) < highestScore:
             info = deepcopy(self.gameState)
-            reply = self.gameState.players[currentIndex].strategy.play(info)
+            reply = self.gameState.players[self.gameState.currentIndex].strategy.play(info)
+            print('Player '+str(self.gameState.currentIndex+1)+' decided to '+str(reply))
             if reply == 'fold':
                 foldFrom = self.gameState.bestFold()
                 self.gameState.players[foldFrom(0)].steal(foldFrom[1])
-                self.gameState.players[currentIndex].catch(foldFrom[1])
+                self.gameState.players[self.gameState.currentIndex].catch(foldFrom[1])
 
             else:
                 try:
                     self.gameState.players[reply[0]].steal(reply[1])
-                    self.gameState.players[currentIndex].catch(reply[1])
+                    self.gameState.players[self.gameState.currentIndex].catch(reply[1])
                 except TypeError:
-                    self.gameState.players[currentIndex].hit(self.gameState.deck.draw())
+                    hitCard = self.gameState.draw()
+                    self.gameState.players[self.gameState.currentIndex].hit(hitCard)
+                    whichPair = self.gameState.players[self.gameState.currentIndex].whichPair()
+                    if whichPair:
+                        self.gameState.players[self.gameState.currentIndex].catch(hitCard)
+
 
             allScores = [player.getScore() for player in self.gameState.players]
-            currentIndex = (currentIndex + 1) % self.gameState.noPlayers
+            self.gameState.currentIndex = (self.gameState.currentIndex + 1) % self.gameState.noPlayers
 
-        return [player in self.gameState.players
-               if player.getScore() >= highestScore][0]
+        return ((self.gameState.currentIndex - 1) % self.gameState.noPlayers)+1
 
 
 class Information:
@@ -122,27 +127,21 @@ class Information:
                 self.deck.remove(i)
             self.deck.burn()
             self.discards = []
-        card = choice(deck)
-        deck.remove(card)
+        card = choice(self.deck)
+        self.deck.remove(card)
         return card
 
     def inPoints(self):
-        try:
-            return self.allPoints
-        except NameError:
-            self.allPoints = []
-            for player in self.Players:
-                self.allPoints += player.points
-            return self.allPoints
+        self.allPoints = []
+        for player in self.players:
+            self.allPoints += player.points
+        return self.allPoints
 
     def inStacks(self):
-        try:
-            return self.allStacks
-        except NameError:
-            self.allStacks= []
-            for player in self.Players:
-                self.allPoints += list(player.stack)
-            return self.allPoints
+        self.allStacks= []
+        for player in self.players:
+            self.allPoints += player.stack
+        return self.allPoints
 
 class Player:
     """This holds information about the cards that a player has.
