@@ -65,13 +65,62 @@ class Information:
     """
     def __init__(self):
         self.deck = []
+        self.discards = []
+        self.players = []
+
+    def inPoints(self):
+        try:
+            return self.allPoints
+        except NameError:
+            self.allPoints = []
+            for player in self.Players:
+                self.allPoints += player._pointsList
+            return self.allPoints
+
+    def inStacks(self):
+        try:
+            return self.allStacks
+        except NameError:
+            self.allStacks= []
+            for player in self.Players:
+                self.allPoints += list(player._stackSet)
+            return self.allPoints
+
+    def bestFold(self):
+        smallest = min(self.inStacks())
+        best = []
+        for i in range(len(self.players)):
+            if smallest in self.Players[i].inStack():
+                best += (i, smallest)
+        return best
 
 class Player:
     """This holds information about the cards that a player has.
     """
     def __init__(self):
-        self._stackSet = set()
-        self._pointsList = []
+        self.stack = []
+        self.points = []
+
+    def catch(self, card):
+        self.stack = []
+        self.points.append(card)
+
+    def hit(self, card):
+        self.stack.append(card)
+
+    def index(self, newIndex=None):
+        if newIndex == None:
+            return self._index
+        self._index = newIndex
+
+    def score(self):
+        return sum(self.points)
+
+    def smallest(self):
+        return min(self.stack)
+
+    def steam(self, card):
+        self.stack.remove(card)
 
 class SimpletonStrategy:
     """This is an example strategy"""
