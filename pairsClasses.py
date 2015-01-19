@@ -61,14 +61,24 @@ class Player:
             return self._index
         self._index = newIndex
 
-    def score(self):
+    def getScore(self):
         return sum(self.points)
 
-    def smallest(self):
+    def getSmallest(self):
         return min(self.stack)
 
-    def steam(self, card):
+    def steal(self, card):
         self.stack.remove(card)
+
+    def whichPair(self):
+        if self.stack == []:
+            return False
+        from collections import Counter
+        mostCommon = Counter(self.stack).most_common(1)[0]
+        if mostCommon[1] > 1:
+            return mostCommon[0]
+        else:
+            return False
 
 class SimpletonStrategy:
     """This is an example strategy"""

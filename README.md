@@ -45,10 +45,11 @@ It is used by the `Dealer` to change the game state but can be called by a `Stra
   - `hit(card)` adds the card to their *stack*
   - `index(newIndex=None)` retrieves or sets the position of the player in the list of players in the `Information` class
   - `points` the list of the cards in their *points*
-  - `score()` returns the sum of their *points*
-  - `smallest()` returns the smallest card in their *stack*
+  - `getScore()` returns the sum of their *points*
+  - `getSmallest()` returns the smallest card in their *stack*
   - `stack` the list of the cards in their *stack*
   - `steal(card)` removes the card from their *stack*
+  - `whichPair()` returns a paired card if the player has a pair or returns False
 
 ### `Strategy`
 You write a `Strategy` class to compete with those written by other players.  The `Strategy` is initialized with its own `Player` as the sole argument.  The `Strategy` should probably ask the `Dealer` some questions about the state of the game and the decide to hit or which card it would like to fold for.
