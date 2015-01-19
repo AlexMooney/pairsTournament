@@ -80,6 +80,28 @@ class Information:
         self.discards = []
         self.players = []
 
+    def bestFold(self):
+        smallest = min(self.inStacks())
+        best = []
+        for i in range(len(self.players)):
+            if smallest in self.Players[i].inStack():
+                best += (i, smallest)
+        return best
+
+    def draw(self):
+        from random import choice
+        if len(self.deck) == 0: # shuffle
+            self.deck = []
+            for i in range(1, 11):
+                self.deck += [i] * i
+            for i in self.inPoints() + self.inStacks():
+                self.deck.remove(i)
+            self.deck.burn()
+            self.discards = []
+        card = choice(deck)
+        deck.remove(card)
+        return card
+
     def inPoints(self):
         try:
             return self.allPoints
@@ -97,14 +119,6 @@ class Information:
             for player in self.Players:
                 self.allPoints += list(player._stackSet)
             return self.allPoints
-
-    def bestFold(self):
-        smallest = min(self.inStacks())
-        best = []
-        for i in range(len(self.players)):
-            if smallest in self.Players[i].inStack():
-                best += (i, smallest)
-        return best
 
 class Player:
     """This holds information about the cards that a player has.
@@ -125,14 +139,24 @@ class Player:
             return self._index
         self._index = newIndex
 
-    def score(self):
+    def getScore(self):
         return sum(self.points)
 
-    def smallest(self):
+    def getSmallest(self):
         return min(self.stack)
 
-    def steam(self, card):
+    def steal(self, card):
         self.stack.remove(card)
+
+    def whichPair(self):
+        if self.stack == []:
+            return False
+        from collections import Counter
+        mostCommon = Counter(self.stack).most_common(1)[0]
+        if mostCommon[1] > 1:
+            return mostCommon[0]
+        else:
+            return False
 
 class SimpletonStrategy:
     """This is an example strategy"""
