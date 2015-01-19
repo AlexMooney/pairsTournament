@@ -29,13 +29,13 @@ The `Information` class is passed to the `Strategy` classes on their turn and co
 The `Dealer` has the master copy of `Information` which is the source of truth for the game state.
 The master `Information` is deep copied before being passed to the `Strategy` classes so that they can manipulate it without affecting the game state.
 #### `Information` methods
+- `bestFold()` returns a list of tuples `(playerIndex, card)` for the smallest card currently showing.
 - `deck` is the list of all cards that have not entered play.
 - `discards` is the list of all seen cards in the discard pile.
+- `draw()` pulls a random card from the `deck` and handles reshuffling the discard pile, if needed.
 - `inPoints()` returns list of all cards currently in points.
 - `inStacks()` returns list of all cards currently in a stack.
 - `players` is the list of players in play order.
-- `bestFold()` returns a list of tuples `(playerIndex, card)` for the smallest card currently showing.
-
 
 ### `Player`
 The `Player` class holds the lists of *stack* and *points* cards.
@@ -45,10 +45,11 @@ It is used by the `Dealer` to change the game state but can be called by a `Stra
   - `hit(card)` adds the card to their *stack*
   - `index(newIndex=None)` retrieves or sets the position of the player in the list of players in the `Information` class
   - `points` the list of the cards in their *points*
-  - `score()` returns the sum of their *points*
-  - `smallest()` returns the smallest card in their *stack*
+  - `getScore()` returns the sum of their *points*
+  - `getSmallest()` returns the smallest card in their *stack*
   - `stack` the list of the cards in their *stack*
   - `steal(card)` removes the card from their *stack*
+  - `whichPair()` returns a paired card if the player has a pair or returns False
 
 ### `Strategy`
 You write a `Strategy` class to compete with those written by other players.  The `Strategy` is initialized with its own `Player` as the sole argument.  The `Strategy` should probably ask the `Dealer` some questions about the state of the game and the decide to hit or which card it would like to fold for.
