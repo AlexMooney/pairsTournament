@@ -16,6 +16,7 @@ class Dealer:
 
         self.gameState = Information()
         self.gameState.noPlayers = noPlayers
+        self.verbose = False
         for n in range(self.gameState.noPlayers):
             self.gameState.players.append(Player())
 
@@ -41,10 +42,11 @@ class Dealer:
     def deal(self):
 
         self.burn()
+
         for player in self.gameState.players:
             self.gameState.discards.append(player.stack)
-            new_card = self.gameState.draw()
-            player.stack = [new_card]
+            newCard = self.gameState.draw()
+            player.stack = [newCard]
 
         cardList = [sum(player.stack) for player in self.gameState.players]
         minPlayers = [player for player in self.gameState.players
@@ -61,9 +63,16 @@ class Dealer:
                         self.gameState.discards.append(player.stack.pop(-1))
                         player.hit(self.gameState.draw())
             cardList = [sum(player.stack) for player in minPlayers]
+            minPlayers = [player for player in minPlayers
+                           if sum(player.stack) == min(cardList)]
 
         startPlayer = minPlayers[0]
-        self.gameState.currentIndex = self.gameState.players.index(startPlayer)
+        self.gameState.startIndex = self.gameState.players.index(startPlayer)
+
+        i = 0
+        for player in self.gameState.players:
+            i += 1
+            self.vPrint('Player ' + str(i) + '\'s stack: ' + str(player.stack))
 
     def play(self):
         from copy import deepcopy
@@ -71,33 +80,57 @@ class Dealer:
         highestScore = max(int(60 / self.gameState.noPlayers) + 1, 11)
 
         allScores = [player.getScore() for player in self.gameState.players]
+        currentIndex = self.gameState.startIndex
 
         while max(allScores) < highestScore:
             info = deepcopy(self.gameState)
-            reply = self.gameState.players[self.gameState.currentIndex].strategy.play(info)
-            print('Player '+str(self.gameState.currentIndex+1)+' decided to '+str(reply))
+            reply = self.gameState.players[currentIndex].strategy.play(info)
+            print('Player '+str(currentIndex+1)+' decided to '+str(reply))
             if reply == 'fold':
                 foldFrom = self.gameState.bestFold()
                 self.gameState.players[foldFrom(0)].steal(foldFrom[1])
-                self.gameState.players[self.gameState.currentIndex].catch(foldFrom[1])
-
+                self.gameState.players[currentIndex].catch(foldFrom[1])
+                self.vPrint('You just folded for ' + str(foldFrom[1]) +
+                       ' Your stack: ' +
+                       str(self.gameState.players[currentIndex].stack) +
+                        ' Your score: ' +
+                        str(self.gameState.players[currentIndex].getScore()))
             else:
                 try:
                     self.gameState.players[reply[0]].steal(reply[1])
-                    self.gameState.players[self.gameState.currentIndex].catch(reply[1])
+                    self.gameState.players[currentIndex].catch(reply[1])
+                    self.vPrint('You just folded for ' + str(reply[1]) +
+                           ' Your stack: ' +
+                           str(self.gameState.players[currentIndex].stack) +
+                            ' Your score: ' +
+                            str(self.gameState.players[currentIndex].getScore()))
                 except TypeError:
                     hitCard = self.gameState.draw()
-                    self.gameState.players[self.gameState.currentIndex].hit(hitCard)
-                    whichPair = self.gameState.players[self.gameState.currentIndex].whichPair()
+                    self.gameState.players[currentIndex].hit(hitCard)
+                    whichPair = self.gameState.players[currentIndex].whichPair()
                     if whichPair:
-                        self.gameState.players[self.gameState.currentIndex].catch(hitCard)
+                        self.gameState.players[currentIndex].catch(hitCard)
+                        self.vPrint('You just paired for ' + str(hitCard) +
+                               ' Your stack: ' +
+                               str(self.gameState.players[currentIndex].stack) +
+                                ' Your score: ' +
+                                str(self.gameState.players[currentIndex].getScore()))
+                    else:
+                        self.vPrint('You just hit for ' + str(hitCard) +
+                               ' Your stack: ' +
+                               str(self.gameState.players[currentIndex].stack) +
+                                ' Your score: ' +
+                                str(self.gameState.players[currentIndex].getScore()))
 
 
             allScores = [player.getScore() for player in self.gameState.players]
-            self.gameState.currentIndex = (self.gameState.currentIndex + 1) % self.gameState.noPlayers
+            currentIndex = (currentIndex + 1) % self.gameState.noPlayers
 
-        return ((self.gameState.currentIndex - 1) % self.gameState.noPlayers)+1
+        return ((currentIndex - 1) % self.gameState.noPlayers)+1
 
+    def vPrint(self, *args):
+        if self.verbose:
+            print(*args)
 
 class Information:
     """This the the game state information provided to Strategy classes to make
@@ -107,7 +140,7 @@ class Information:
         self.deck = []
         self.discards = []
         self.players = []
-        self.currentIndex = 0 # Dealer.deal will set this properly
+        self.startIndex = 0 # Dealer.deal will set this properly
 
     def bestFold(self):
         smallest = min(self.inStacks())

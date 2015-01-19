@@ -54,6 +54,20 @@ False
 >>> p.points
 [10, 9]
 
+>>> from pairsClasses import Dealer
+
+>>> d = Dealer()
+
+>>> d.vPrint('Hi there') # verbose false by default
+
+>>> d.verbose = True
+
+>>> d.vPrint('Hi there') # print arguments when verbose is true
+Hi there
+
+>>> d.play()
+
+
 """
 
 import doctest
