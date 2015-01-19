@@ -30,6 +30,7 @@ The `Dealer` has the master copy of `Information` which is the source of truth f
 The master `Information` is deep copied before being passed to the `Strategy` classes so that they can manipulate it without affecting the game state.
 #### `Information` methods
 - `bestFold()` returns a list of tuples `(playerIndex, card)` for the smallest card currently showing.
+- `currentIndex` is the index of the `players` who is currently playing her turn.
 - `deck` is the list of all cards that have not entered play.
 - `discards` is the list of all seen cards in the discard pile.
 - `draw()` pulls a random card from the `deck` and handles reshuffling the discard pile, if needed.
@@ -49,6 +50,7 @@ It is used by the `Dealer` to change the game state but can be called by a `Stra
   - `getSmallest()` returns the smallest card in their *stack*
   - `stack` the list of the cards in their *stack*
   - `steal(card)` removes the card from their *stack*
+  - `strategy` is an instance of `Strategy` which is initialized by the `tournament`
   - `whichPair()` returns a paired card if the player has a pair or returns False
 
 ### `Strategy`
