@@ -140,7 +140,6 @@ class Information:
                 self.deck += [i] * i
             for i in self.inPoints() + self.inStacks():
                 self.deck.remove(i)
-            self.deck.burn()
             self.discards = []
         card = choice(self.deck)
         self.deck.remove(card)
@@ -155,8 +154,8 @@ class Information:
     def inStacks(self):
         self.allStacks= []
         for player in self.players:
-            self.allPoints += player.stack
-        return self.allPoints
+            self.allStacks += player.stack
+        return self.allStacks
 
 class Player:
     """This holds information about the cards that a player has.
