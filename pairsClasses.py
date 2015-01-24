@@ -44,7 +44,6 @@ class Dealer:
         self.burn()
 
         for player in self.gameState.players:
-            self.gameState.discards.append(player.stack)
             newCard = self.gameState.draw()
             player.stack = [newCard]
             player.strategy.player = player
