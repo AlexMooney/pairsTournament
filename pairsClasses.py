@@ -23,26 +23,7 @@ class Dealer:
         for i in range(1, 11):
             self.gameState.deck += [i] * i
 
-    def burn(self, N=5):
-        """
-        >>> d = Dealer()
-
-
-        >>> d.burn()
-
-
-        >>> len(d.gameState.deck)
-        50
-
-        """
-        from random import choice
-        for i in range(N):
-            self.gameState.deck.remove(choice(self.gameState.deck))
-
     def deal(self):
-
-        self.burn()
-
         for player in self.gameState.players:
             newCard = self.gameState.draw()
             player.stack = [newCard]
@@ -140,6 +121,7 @@ class Information:
         self.deck = []
         self.discards = []
         self.players = []
+        self.burn = 5
         self.startIndex = 0 # Dealer.deal will set this properly
 
     def bestFold(self):
@@ -152,7 +134,7 @@ class Information:
 
     def draw(self):
         from random import choice
-        if len(self.deck) == 0: # shuffle
+        if len(self.deck) <= self.burn: # time to shuffle
             self.deck = []
             for i in range(1, 11):
                 self.deck += [i] * i
