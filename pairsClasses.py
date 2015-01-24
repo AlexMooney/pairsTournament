@@ -66,7 +66,7 @@ class Dealer:
         while max(allScores) < highestScore:
             info = deepcopy(self.gameState)
             reply = self.gameState.players[currentIndex].strategy.play(info)
-            print('Player '+str(currentIndex+1)+' decided to '+str(reply))
+            self.vPrint('Player '+str(currentIndex+1)+' decided to '+str(reply))
             if reply == 'fold':
                 foldFrom = self.gameState.bestFold()
                 self.gameState.players[foldFrom(0)].steal(foldFrom[1])
