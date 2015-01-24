@@ -47,6 +47,7 @@ class Dealer:
             self.gameState.discards.append(player.stack)
             newCard = self.gameState.draw()
             player.stack = [newCard]
+            player.strategy.player = player
 
         cardList = [sum(player.stack) for player in self.gameState.players]
         minPlayers = [player for player in self.gameState.players
