@@ -131,13 +131,16 @@ class Information:
         self.burn = 5
         self.startIndex = 0 # Dealer.deal will set this properly
 
-    def bestFold(self):
+    def bestFolds(self):
         smallest = min(self.inStacks())
         best = []
         for i in range(len(self.players)):
-            if smallest in self.Players[i].inStack():
-                best += (i, smallest)
+            if smallest in self.players[i].stack:
+                best += [(i, smallest)]
         return best
+
+    def bestFold(self):
+        return self.bestFolds()[0]
 
     def draw(self):
         from random import choice
