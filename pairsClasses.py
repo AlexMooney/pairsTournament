@@ -64,44 +64,51 @@ class Dealer:
         currentIndex = self.gameState.startIndex
 
         while max(allScores) < highestScore:
+            currentPlayer = self.gameState.players[currentIndex]
             info = deepcopy(self.gameState)
-            reply = self.gameState.players[currentIndex].strategy.play(info)
-            self.vPrint('Player '+str(currentIndex+1)+' decided to '+str(reply))
+            inStacks = self.gameState.inStacks()
+            if inStacks == [] or \
+             len(currentPlayer.stack) == 0 or \
+             (min(inStacks) + currentPlayer.getScore()) >= highestScore:
+                reply = 'hit.'
+                self.vPrint('Player '+str(currentIndex+1)+' was forced to hit.')
+            else:
+                reply = currentPlayer.strategy.play(info)
+                self.vPrint('Player '+str(currentIndex+1)+' decided to '+str(reply))
+
             if reply == 'fold':
                 foldFrom = self.gameState.bestFold()
-                self.gameState.players[foldFrom(0)].steal(foldFrom[1])
-                self.gameState.players[currentIndex].catch(foldFrom[1])
+                self.gameState.players[foldFrom[0]].steal(foldFrom[1])
+                currentPlayer.catch(foldFrom[1])
                 self.vPrint('You just folded for ' + str(foldFrom[1]) +
-                       ' Your stack: ' +
-                       str(self.gameState.players[currentIndex].stack) +
-                        ' Your score: ' +
-                        str(self.gameState.players[currentIndex].getScore()))
+                    ' Your stack: ' + str(currentPlayer.stack) +
+                    ' Your score: ' + str(currentPlayer.getScore()))
             else:
                 try:
                     self.gameState.players[reply[0]].steal(reply[1])
-                    self.gameState.players[currentIndex].catch(reply[1])
+                    currentPlayer.catch(reply[1])
                     self.vPrint('You just folded for ' + str(reply[1]) +
                            ' Your stack: ' +
-                           str(self.gameState.players[currentIndex].stack) +
+                           str(currentPlayer.stack) +
                             ' Your score: ' +
-                            str(self.gameState.players[currentIndex].getScore()))
+                            str(currentPlayer.getScore()))
                 except TypeError:
                     hitCard = self.gameState.draw()
-                    self.gameState.players[currentIndex].hit(hitCard)
-                    whichPair = self.gameState.players[currentIndex].whichPair()
+                    currentPlayer.hit(hitCard)
+                    whichPair = currentPlayer.whichPair()
                     if whichPair:
-                        self.gameState.players[currentIndex].catch(hitCard)
+                        currentPlayer.catch(hitCard)
                         self.vPrint('You just paired for ' + str(hitCard) +
                                ' Your stack: ' +
-                               str(self.gameState.players[currentIndex].stack) +
+                               str(currentPlayer.stack) +
                                 ' Your score: ' +
-                                str(self.gameState.players[currentIndex].getScore()))
+                                str(currentPlayer.getScore()))
                     else:
                         self.vPrint('You just hit for ' + str(hitCard) +
                                ' Your stack: ' +
-                               str(self.gameState.players[currentIndex].stack) +
+                               str(currentPlayer.stack) +
                                 ' Your score: ' +
-                                str(self.gameState.players[currentIndex].getScore()))
+                                str(currentPlayer.getScore()))
 
 
             allScores = [player.getScore() for player in self.gameState.players]
