@@ -18,7 +18,7 @@ class Dealer:
         self.gameState.noPlayers = noPlayers
         self.verbose = False
         for n in range(self.gameState.noPlayers):
-            self.gameState.players.append(Player())
+            self.gameState.players.append(Player(n))
 
         for i in range(1, 11):
             self.gameState.deck += [i] * i
@@ -77,7 +77,7 @@ class Dealer:
                 self.vPrint('Player '+str(currentIndex+1)+' decided to '+str(reply))
 
             if reply == 'fold':
-                foldFrom = self.gameState.bestFold()
+                foldFrom = self.gameState.bestFold(currentPlayer)
                 self.gameState.players[foldFrom[0]].steal(foldFrom[1])
                 currentPlayer.catch(foldFrom[1])
                 self.vPrint('You just folded for ' + str(foldFrom[1]) +
@@ -130,17 +130,33 @@ class Information:
         self.players = []
         self.burn = 5
         self.startIndex = 0 # Dealer.deal will set this properly
+        self.noPlayers = 0 # Dealer.__init__ will set this properly
 
     def bestFolds(self):
-        smallest = min(self.inStacks())
+        """
+        Gets a list of tuples with the player index and smallest card for each player.
+        """
         best = []
         for i in range(len(self.players)):
-            if smallest in self.players[i].stack:
-                best += [(i, smallest)]
+            low = 10
+            for card in self.players[i].stack:
+                if low>card:
+                    low = card
+            best += [(i, low)]
         return best
 
-    def bestFold(self):
-        return self.bestFolds()[0]
+    def bestFold(self, player):
+        """
+        Return the "best" fold, for a nondiscriminating sort of strategy.
+        """
+        best = min([fold[1] for fold in self.bestFolds()])
+        index = (player.index()-1)%self.noPlayers # player to right
+        while True:
+            if min([11]+self.players[index].stack) == best:
+                return (index, best)
+            else:
+                index = (index - 1)%self.noPlayers
+
 
     def draw(self):
         from random import choice
@@ -170,10 +186,11 @@ class Information:
 class Player:
     """This holds information about the cards that a player has.
     """
-    def __init__(self):
+    def __init__(self, index):
         self.stack = []
         self.points = []
         self.strategy = SimpletonStrategy()
+        self._index = index
 
     def catch(self, card):
         self.stack = []
