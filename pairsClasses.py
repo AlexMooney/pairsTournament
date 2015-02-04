@@ -71,10 +71,10 @@ class Dealer:
              len(currentPlayer.stack) == 0 or \
              (min(inStacks) + currentPlayer.getScore()) >= highestScore:
                 reply = 'hit.'
-                self.vPrint('Player '+str(currentIndex+1)+' was forced to hit.')
+                self.vPrint('Player '+str(currentIndex)+' was forced to hit.')
             else:
                 reply = currentPlayer.strategy.play(info)
-                self.vPrint('Player '+str(currentIndex+1)+' decided to '+str(reply))
+                self.vPrint('Player '+str(currentIndex)+' replied '+str(reply))
 
             if reply == 'fold':
                 foldFrom = self.gameState.bestFold(currentPlayer)
@@ -109,12 +109,29 @@ class Dealer:
                                str(currentPlayer.stack) +
                                 ' Your score: ' +
                                 str(currentPlayer.getScore()))
-
+                except KeyError:
+                    self.vPrint(str(reply) + ' is an invalid fold option.')
+                    hitCard = self.gameState.draw()
+                    currentPlayer.hit(hitCard)
+                    whichPair = currentPlayer.whichPair()
+                    if whichPair:
+                        currentPlayer.catch(hitCard)
+                        self.vPrint('You just paired for ' + str(hitCard) +
+                               ' Your stack: ' +
+                               str(currentPlayer.stack) +
+                                ' Your score: ' +
+                                str(currentPlayer.getScore()))
+                    else:
+                        self.vPrint('You just hit for ' + str(hitCard) +
+                               ' Your stack: ' +
+                               str(currentPlayer.stack) +
+                                ' Your score: ' +
+                                str(currentPlayer.getScore()))
 
             allScores = [player.getScore() for player in self.gameState.players]
             currentIndex = (currentIndex + 1) % self.gameState.noPlayers
 
-        return ((currentIndex - 1) % self.gameState.noPlayers)+1
+        return (currentIndex - 1) % self.gameState.noPlayers
 
     def vPrint(self, *args):
         if self.verbose:
@@ -211,7 +228,10 @@ class Player:
         return min(self.stack)
 
     def steal(self, card):
-        self.stack.remove(card)
+        if card in self.stack:
+            self.stack.remove(card)
+        else:
+            raise KeyError
 
     def whichPair(self):
         if self.stack == []:
@@ -225,10 +245,10 @@ class Player:
 
 class SimpletonStrategy:
     """This is an example strategy"""
-    def __init__(self):
-        self.shouldIHit = True
+    def __init__(self, shouldHit=True):
+        self.shouldHit = shouldHit
     def play(self, info):
-        if self.shouldIHit:
+        if self.shouldHit:
             return 'Hit me; I can\'t lose!'
         else:
             return 'fold'
