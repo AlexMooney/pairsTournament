@@ -50,9 +50,7 @@ class Dealer:
         startPlayer = minPlayers[0]
         self.gameState.startIndex = self.gameState.players.index(startPlayer)
 
-        i = 0
-        for player in self.gameState.players:
-            i += 1
+        for i, player in enumerate(self.gameState.players):
             self.vPrint('Player ' + str(i) + '\'s stack: ' + str(player.stack))
 
     def play(self):
