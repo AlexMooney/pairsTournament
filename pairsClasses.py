@@ -131,9 +131,9 @@ class Dealer:
 
         return (currentIndex - 1) % self.gameState.noPlayers
 
-    def vPrint(self, *args):
+    def vPrint(self, args):
         if self.verbose:
-            print(*args)
+            print(args)
 
 class Information:
     """This the the game state information provided to Strategy classes to make

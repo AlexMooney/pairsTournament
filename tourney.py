@@ -5,6 +5,7 @@ Dealer class and other game mechanics imported from pairsClasses.
 Strategies to play in the tournament need to be imported, initialized,
 and passed to tournament function.
 '''
+from __future__ import division
 numpy = False
 try:
     import numpy as np
