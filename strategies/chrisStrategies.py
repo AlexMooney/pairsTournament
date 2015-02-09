@@ -10,7 +10,7 @@ class FoldLowWithHigh:
 
     def play(self, info):
         # get best fold as tuple (playerIndex, card)
-        best = info.bestFold()
+        best = info.bestFold(self.player)
         # get current hand
         stack = self.player.stack
         if best[1] <= self.fold and max(stack) >= self.hand:
@@ -31,7 +31,7 @@ class Expectation:
         self.discards = info.discards
         deck = info.deck
         hand = tuple(self.player.stack)
-        fold = info.bestFold()
+        fold = info.bestFold(self.player)
         ev_hit = self._turn(hand, deck, 1)
  
         if fold[1] / 2 < ev_hit:
