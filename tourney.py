@@ -16,16 +16,26 @@ import pairsClasses as p
 from random import shuffle
 
 # Specify strategies to import here
-from strategies.chrisStrategies import FoldLowWithHigh
-from strategies.chrisStrategies import Expectation
+from strategies.alexStrategies import CruelFold
+from strategies.chrisStrategies import Expectation3
+from strategies.brianStrategies import simpleExp2
+from strategies.DannisStrategy import DannisStrategy
 
 # Initalize strategies in list
-strategies = [FoldLowWithHigh(3,1),
-              FoldLowWithHigh(4,8),
-              Expectation()]
-              
+strategies = [
+              CruelFold(),
+              Expectation3(),
+              simpleExp2(),
+              DannisStrategy(0.19),
+              ]
+
 # name strategies for reporting
-strat_names = ["Folder_3", "Folder_4_8", "Expectation"]
+strat_names = [
+               "Alex",
+               "Chris",
+               "Brian",
+               "Danni",
+            ]
 
 # Remaining code does not need to change between tourneys
 n_strats = len(strategies)
@@ -36,12 +46,12 @@ for i in range(n_strats):
 
 losers = []
 
-def tourney(strategies, games = 500, check = 50, prob = 0.95, prior = 500):
+def tourney(strategies, games = 50000, check = 100, prob = 0.95, prior = 100):
     early = False
     for i in range(games):
         if not i % check:
             if summary(i, prob, prior):
-                early = True                
+                early = True
                 break
         d = p.Dealer(n_strats)
         shuffle(strategies)
@@ -63,7 +73,7 @@ def summary(games, prob, prior):
         if games == 0:
             games = 1
         print(strat_names[i] + "\t" + str(data[i]) + "\t" + '%.2f' % (data[i] / games))
-    
+
     if numpy:
         prior = np.repeat(prior, n_strats)
         posterior = prior + np.array(data)
@@ -71,12 +81,12 @@ def summary(games, prob, prior):
         draws = np.random.dirichlet(posterior, N)
         best = np.bincount(np.argmin(draws, axis = 1), minlength = n_strats) / N
         worst = np.bincount(np.argmax(draws, axis = 1), minlength = n_strats) / N
-    
+
         print("\n\t\tP(best)\tP(worst)")
         for i in range(n_strats):
             print(strat_names[i] + "\t" + '%.2f' % best[i] + "\t" + '%.2f' % worst[i])
         if max(best) > prob and max(worst) > prob:
             print("Stopping early due to high probabilities of best and worst.  (Threshold set to " + str(prob) + ")")
             return True
-    
+
 tourney(strategies)
