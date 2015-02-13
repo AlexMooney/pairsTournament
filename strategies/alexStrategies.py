@@ -41,7 +41,11 @@ class CruelFold:
     def play(self, info):
         numPlayers = info.noPlayers
         hitPoints = [(60/numPlayers) - p.getScore() for p in info.players]
-        folds = sorted(info.bestFolds(), key=lambda t: t[1])[:2] # best two cards
+        folds = sorted(info.bestFolds(), key=lambda t: t[1])
+        if folds[0][0] == self.player.index():
+            folds = folds[:1] + [f for f in folds[1:] if f[0] != self.player.index]
+        else:
+            folds = [f for f in folds if f[0] != self.player.index()]
         pkill = 0
         c = self.Counter(info.deck)
         for i, hp in enumerate(hitPoints):
