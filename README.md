@@ -59,3 +59,21 @@ It is used by the `Dealer` to change the game state but can be called by a `Stra
 You write a `Strategy` class to compete with those written by other players.  The `Strategy` is initialized with its own `Player` as the sole argument.  The `Strategy` should probably ask the `Dealer` some questions about the state of the game and the decide to hit or which card it would like to fold for.
 ##### `Strategy` methods
   - `play(self, information)` should return `(playerIndex, card)` to fold for a specific card, `"fold"` to take the "best" card available, and any other value to hit.
+
+## Tournament Results
+--------------------------------
+Games Played:   19100
+
+        Lost    Percent
+Alex    4718    0.25
+Chris   3863    0.20
+Brian   5347    0.28
+Danni   5172    0.27
+
+        P(best) P(worst)
+Alex    0.00    0.00
+Chris   1.00    0.00
+Brian   0.00    0.95
+Danni   0.00    0.05
+Stopping early due to high probabilities of best and worst.  (Threshold set to 0.95)
+
