@@ -15,16 +15,19 @@ import pairsClasses as p
 from random import shuffle
 
 # Specify strategies to import here
-from strategies.chrisStrategies import FoldLowWithHigh
-from strategies.chrisStrategies import Expectation
+# from strategies.chrisStrategies import FoldLowWithHigh
+from strategies.chrisStrategies import Expectation3
+from strategies.chrisStrategies import Heuristic
 
 # Initalize strategies in list
-strategies = [FoldLowWithHigh(3,1),
-              FoldLowWithHigh(4,8),
-              Expectation()]
+strategies = [Heuristic(near_death=6, ratio=3),
+              Heuristic(ratio=2.75, near_death=4),
+              Expectation3(),
+              Heuristic(near_death=5, ratio=3),
+              Heuristic(ratio=3.25, near_death=6, always=3)]
               
 # name strategies for reporting
-strat_names = ["Folder_3", "Folder_4_8", "Expectation"]
+strat_names = ["Heur Wait More", "Heuristic Agg", "Expectation3", "Heuristic Wait", "Heuristic W X"]
 
 # Remaining code does not need to change between tourneys
 n_strats = len(strategies)
@@ -35,7 +38,7 @@ for i in range(n_strats):
 
 losers = []
 
-def tourney(strategies, games = 500, check = 50, prob = 0.95, prior = 500):
+def tourney(strategies, games = 50000, check = 50, prob = 0.95, prior = 500):
     early = False
     for i in range(games):
         if not i % check:

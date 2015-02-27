@@ -162,7 +162,7 @@ class Expectation3:
         scores = []
         for i in range(info.noPlayers):
             scores.append(info.players[i].getScore())
-        if play_to - max(scores) < 3 and high_card + self.player.getScore() >= play_to:
+        if play_to - max(scores) < 6 and high_card + self.player.getScore() >= play_to:
             return fold
         ev_hit = self._turn(hand, deck, 1)
  
