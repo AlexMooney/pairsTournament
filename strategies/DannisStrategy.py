@@ -36,6 +36,9 @@ class DannisStrategy:
 
 class NoCardKnowledge:
 #This class uses the suggested strategy available on the pairs website (no knowledge of cards in deck or discards)
+	def __init__(self, N=4):
+		self.N = N
+
 	def play(self, info):
 		# get the number of players
 		NumPlayers = info.noPlayers
@@ -43,14 +46,14 @@ class NoCardKnowledge:
 		# get best fold as tuple (playerIndex, card)
 		best = info.bestFold(self.player)
 		# get current hand
+		points = self.player.points
 		stack = self.player.stack
-		if best[1]==1 and (sum(stack) < (highestScore-1)):
+		average = sum(stack)/len(stack)
+		if best[1] <= self.N:
 			return best
-		if (sum(stack)/len(stack)) >= (highestScore - sum(stack)):
+		elif average + sum(points) >= highestScore:
 			return best
-		if sum(stack) > 18*best[1]:
+		elif sum(points) > 18*best[1]:
 			return best
-		if best[1] + sum(stack) >= highestScore:
-			return "Hit"
 		return "Hit"
 
