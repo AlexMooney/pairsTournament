@@ -162,7 +162,7 @@ class Expectation3:
         scores = []
         for i in range(info.noPlayers):
             scores.append(info.players[i].getScore())
-        if play_to - max(scores) < 3 and high_card + self.player.getScore() >= play_to:
+        if play_to - max(scores) < 6 and high_card + self.player.getScore() >= play_to:
             return fold
         ev_hit = self._turn(hand, deck, 1)
  
@@ -209,8 +209,7 @@ class Expectation3:
         
 class Heuristic:
     '''
-    Determines optimal play by computing the expected points per turn
-    until next points are earned.
+    Determines optimal play according to 4 simple parameters.
     '''
     def __init__(self, ratio = 2.5, near_death = 3, always = 2, diff = 3):
         self.ratio = ratio
@@ -232,3 +231,33 @@ class Heuristic:
         if play_to - max(scores) <= self.nd and max(hand) + self.player.getScore() >= play_to:
             return fold
         return "hit"
+        
+class SmartRatio:
+    '''
+    Determines optimal play with simple ratio intended to approximate
+    Expectation with a full deck.
+    '''
+    def __init__(self, start = 1, inc = 1, near_death = 6, always = 2):
+        self.start = start
+        self.inc = inc
+        self.nd = near_death
+        self.always = always
+
+    def play(self, info):
+        hand = self.player.stack
+        fold = info.bestFold(self.player)
+        # cards always fold for
+        if(fold[1] <= self.always):
+            return fold
+        play_to = max(11, 60 / info.noPlayers + 1)
+        # when to start 'end-game' folding
+        scores = []
+        for i in range(info.noPlayers):
+            scores.append(info.players[i].getScore())
+        if play_to - max(scores) <= self.nd and max(hand) + self.player.getScore() >= play_to:
+            return fold
+        # general fold rule
+        if sum(hand) / fold[1] >= (self.start + self.inc*len(hand)):
+            return fold
+        return "hit"
+
