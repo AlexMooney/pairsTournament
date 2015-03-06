@@ -87,3 +87,20 @@ class simpleExp2:
     def _p_deal(self, c, deck):
         return deck.count(c) / len(deck)
 
+class noPeek:
+    '''
+    strategy not requiring deck
+    '''
+    def play(self, info):
+        self.discards = info.discards
+        deck = info.deck
+        hand = tuple(self.player.stack)
+        best = info.bestFold(self.player)
+        if (sum(hand) > 15 or max(hand)>7) and best[1] < 5:
+             return best
+        elif (sum(hand) > 16 or max(hand)>9) and best[1] < 6:
+             return best
+        elif sum([1 if sum(p.points)>4 and len(p.stack)>0 and max(p.stack) > (11 - sum(p.points)) else 0 for p in info.players]) > 2:
+             return best
+        else:
+             return "booger"
