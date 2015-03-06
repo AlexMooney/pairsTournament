@@ -29,13 +29,15 @@ The `Information` class is passed to the `Strategy` classes on their turn and co
 The `Dealer` has the master copy of `Information` which is the source of truth for the game state.
 The master `Information` is deep copied before being passed to the `Strategy` classes so that they can manipulate it without affecting the game state.
 #### `Information` methods
-- `bestFold()` returns a list of tuples `(playerIndex, card)` for the smallest card currently showing.
+- `bestFold(strategy)` returns a single tuple `(playerIndex, card)` with the smallest cards currently available, with ties broken to the `strategy`'s right.
+- `bestFolds()` returns a list of tuples `(playerIndex, card)` with the smallest card in front of each player.
 - `currentIndex` is the index of the `players` who is currently playing her turn.
 - `deck` is the list of all cards that have not entered play.
 - `discards` is the list of all seen cards in the discard pile.
 - `draw()` pulls a random card from the `deck` and handles reshuffling the discard pile, if needed.
 - `inPoints()` returns list of all cards currently in points.
 - `inStacks()` returns list of all cards currently in a stack.
+- `noPlayers` holds the number of players in the game.
 - `players` is the list of players in play order.
 
 ### `Player`
@@ -57,3 +59,21 @@ It is used by the `Dealer` to change the game state but can be called by a `Stra
 You write a `Strategy` class to compete with those written by other players.  The `Strategy` is initialized with its own `Player` as the sole argument.  The `Strategy` should probably ask the `Dealer` some questions about the state of the game and the decide to hit or which card it would like to fold for.
 ##### `Strategy` methods
   - `play(self, information)` should return `(playerIndex, card)` to fold for a specific card, `"fold"` to take the "best" card available, and any other value to hit.
+
+## Tournament Results
+--------------------------------
+Games Played:   19100
+
+        Lost    Percent
+Alex    4718    0.25
+Chris   3863    0.20
+Brian   5347    0.28
+Danni   5172    0.27
+
+        P(best) P(worst)
+Alex    0.00    0.00
+Chris   1.00    0.00
+Brian   0.00    0.95
+Danni   0.00    0.05
+Stopping early due to high probabilities of best and worst.  (Threshold set to 0.95)
+
