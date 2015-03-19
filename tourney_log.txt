@@ -1,0 +1,4631 @@
+--------------------------------
+Games Played:	500
+
+	Lost	Percent
+Alex	242	0.48
+Chris	258	0.52
+
+	P(best)	P(worst)
+Alex	0.66	0.34
+Chris	0.34	0.66
+--------------------------------
+Games Played:	1000
+
+	Lost	Percent
+Alex	497	0.50
+Chris	503	0.50
+
+	P(best)	P(worst)
+Alex	0.55	0.45
+Chris	0.45	0.55
+--------------------------------
+Games Played:	1500
+
+	Lost	Percent
+Alex	743	0.50
+Chris	757	0.50
+
+	P(best)	P(worst)
+Alex	0.61	0.39
+Chris	0.39	0.61
+--------------------------------
+Games Played:	2000
+
+	Lost	Percent
+Alex	1002	0.50
+Chris	998	0.50
+
+	P(best)	P(worst)
+Alex	0.46	0.54
+Chris	0.54	0.46
+--------------------------------
+Games Played:	2500
+
+	Lost	Percent
+Alex	1251	0.50
+Chris	1249	0.50
+
+	P(best)	P(worst)
+Alex	0.49	0.51
+Chris	0.51	0.49
+--------------------------------
+Games Played:	3000
+
+	Lost	Percent
+Alex	1487	0.50
+Chris	1513	0.50
+
+	P(best)	P(worst)
+Alex	0.66	0.34
+Chris	0.34	0.66
+--------------------------------
+Games Played:	3500
+
+	Lost	Percent
+Alex	1740	0.50
+Chris	1760	0.50
+
+	P(best)	P(worst)
+Alex	0.62	0.38
+Chris	0.38	0.62
+--------------------------------
+Games Played:	4000
+
+	Lost	Percent
+Alex	1972	0.49
+Chris	2028	0.51
+
+	P(best)	P(worst)
+Alex	0.78	0.22
+Chris	0.22	0.78
+--------------------------------
+Games Played:	4500
+
+	Lost	Percent
+Alex	2236	0.50
+Chris	2264	0.50
+
+	P(best)	P(worst)
+Alex	0.65	0.35
+Chris	0.35	0.65
+--------------------------------
+Games Played:	5000
+
+	Lost	Percent
+Alex	2467	0.49
+Chris	2533	0.51
+
+	P(best)	P(worst)
+Alex	0.80	0.20
+Chris	0.20	0.80
+--------------------------------
+Games Played:	5500
+
+	Lost	Percent
+Alex	2701	0.49
+Chris	2799	0.51
+
+	P(best)	P(worst)
+Alex	0.89	0.11
+Chris	0.11	0.89
+--------------------------------
+Games Played:	6000
+
+	Lost	Percent
+Alex	2952	0.49
+Chris	3048	0.51
+
+	P(best)	P(worst)
+Alex	0.87	0.13
+Chris	0.13	0.87
+--------------------------------
+Games Played:	6500
+
+	Lost	Percent
+Alex	3214	0.49
+Chris	3286	0.51
+
+	P(best)	P(worst)
+Alex	0.80	0.20
+Chris	0.20	0.80
+--------------------------------
+Games Played:	7000
+
+	Lost	Percent
+Alex	3485	0.50
+Chris	3515	0.50
+
+	P(best)	P(worst)
+Alex	0.64	0.36
+Chris	0.36	0.64
+--------------------------------
+Games Played:	7500
+
+	Lost	Percent
+Alex	3741	0.50
+Chris	3759	0.50
+
+	P(best)	P(worst)
+Alex	0.58	0.42
+Chris	0.42	0.58
+--------------------------------
+Games Played:	8000
+
+	Lost	Percent
+Alex	4010	0.50
+Chris	3990	0.50
+
+	P(best)	P(worst)
+Alex	0.41	0.59
+Chris	0.59	0.41
+--------------------------------
+Games Played:	8500
+
+	Lost	Percent
+Alex	4272	0.50
+Chris	4228	0.50
+
+	P(best)	P(worst)
+Alex	0.33	0.67
+Chris	0.67	0.33
+--------------------------------
+Games Played:	9000
+
+	Lost	Percent
+Alex	4529	0.50
+Chris	4471	0.50
+
+	P(best)	P(worst)
+Alex	0.28	0.72
+Chris	0.72	0.28
+--------------------------------
+Games Played:	9500
+
+	Lost	Percent
+Alex	4774	0.50
+Chris	4726	0.50
+
+	P(best)	P(worst)
+Alex	0.32	0.68
+Chris	0.68	0.32
+--------------------------------
+Games Played:	10000
+
+	Lost	Percent
+Alex	5029	0.50
+Chris	4971	0.50
+
+	P(best)	P(worst)
+Alex	0.29	0.71
+Chris	0.71	0.29
+--------------------------------
+Games Played:	10500
+
+	Lost	Percent
+Alex	5278	0.50
+Chris	5222	0.50
+
+	P(best)	P(worst)
+Alex	0.31	0.69
+Chris	0.69	0.31
+--------------------------------
+Games Played:	11000
+
+	Lost	Percent
+Alex	5530	0.50
+Chris	5470	0.50
+
+	P(best)	P(worst)
+Alex	0.29	0.71
+Chris	0.71	0.29
+--------------------------------
+Games Played:	11500
+
+	Lost	Percent
+Alex	5800	0.50
+Chris	5700	0.50
+
+	P(best)	P(worst)
+Alex	0.18	0.82
+Chris	0.82	0.18
+--------------------------------
+Games Played:	12000
+
+	Lost	Percent
+Alex	6054	0.50
+Chris	5946	0.50
+
+	P(best)	P(worst)
+Alex	0.17	0.83
+Chris	0.83	0.17
+--------------------------------
+Games Played:	12500
+
+	Lost	Percent
+Alex	6294	0.50
+Chris	6206	0.50
+
+	P(best)	P(worst)
+Alex	0.23	0.77
+Chris	0.77	0.23
+--------------------------------
+Games Played:	13000
+
+	Lost	Percent
+Alex	6548	0.50
+Chris	6452	0.50
+
+	P(best)	P(worst)
+Alex	0.21	0.79
+Chris	0.79	0.21
+--------------------------------
+Games Played:	13500
+
+	Lost	Percent
+Alex	6804	0.50
+Chris	6696	0.50
+
+	P(best)	P(worst)
+Alex	0.18	0.82
+Chris	0.82	0.18
+--------------------------------
+Games Played:	14000
+
+	Lost	Percent
+Alex	7085	0.51
+Chris	6915	0.49
+
+	P(best)	P(worst)
+Alex	0.08	0.92
+Chris	0.92	0.08
+--------------------------------
+Games Played:	14500
+
+	Lost	Percent
+Alex	7355	0.51
+Chris	7145	0.49
+
+	P(best)	P(worst)
+Alex	0.05	0.95
+Chris	0.95	0.05
+Stopping early due to high probabilities of best and worst.  (Threshold set to 0.95)
+--------------------------------
+Games Played:	500
+
+	Lost	Percent
+Alex	86	0.17
+Michael	414	0.83
+
+	P(best)	P(worst)
+Alex	1.00	0.00
+Michael	0.00	1.00
+Stopping early due to high probabilities of best and worst.  (Threshold set to 0.95)
+--------------------------------
+Games Played:	500
+
+	Lost	Percent
+Alex	229	0.46
+Danni	271	0.54
+
+	P(best)	P(worst)
+Alex	0.86	0.14
+Danni	0.14	0.86
+--------------------------------
+Games Played:	1000
+
+	Lost	Percent
+Alex	452	0.45
+Danni	548	0.55
+
+	P(best)	P(worst)
+Alex	0.98	0.02
+Danni	0.02	0.98
+Stopping early due to high probabilities of best and worst.  (Threshold set to 0.95)
+--------------------------------
+Games Played:	500
+
+	Lost	Percent
+Alex	230	0.46
+Brian	270	0.54
+
+	P(best)	P(worst)
+Alex	0.84	0.16
+Brian	0.16	0.84
+--------------------------------
+Games Played:	1000
+
+	Lost	Percent
+Alex	453	0.45
+Brian	547	0.55
+
+	P(best)	P(worst)
+Alex	0.98	0.02
+Brian	0.02	0.98
+Stopping early due to high probabilities of best and worst.  (Threshold set to 0.95)
+--------------------------------
+Games Played:	500
+
+	Lost	Percent
+Chris	70	0.14
+Michael	430	0.86
+
+	P(best)	P(worst)
+Chris	1.00	0.00
+Michael	0.00	1.00
+Stopping early due to high probabilities of best and worst.  (Threshold set to 0.95)
+--------------------------------
+Games Played:	500
+
+	Lost	Percent
+Chris	223	0.45
+Danni	277	0.55
+
+	P(best)	P(worst)
+Chris	0.92	0.08
+Danni	0.08	0.92
+--------------------------------
+Games Played:	1000
+
+	Lost	Percent
+Chris	438	0.44
+Danni	562	0.56
+
+	P(best)	P(worst)
+Chris	1.00	0.00
+Danni	0.00	1.00
+Stopping early due to high probabilities of best and worst.  (Threshold set to 0.95)
+--------------------------------
+Games Played:	500
+
+	Lost	Percent
+Chris	244	0.49
+Brian	256	0.51
+
+	P(best)	P(worst)
+Chris	0.62	0.38
+Brian	0.38	0.62
+--------------------------------
+Games Played:	1000
+
+	Lost	Percent
+Chris	484	0.48
+Brian	516	0.52
+
+	P(best)	P(worst)
+Chris	0.76	0.24
+Brian	0.24	0.76
+--------------------------------
+Games Played:	1500
+
+	Lost	Percent
+Chris	713	0.48
+Brian	787	0.52
+
+	P(best)	P(worst)
+Chris	0.93	0.07
+Brian	0.07	0.93
+--------------------------------
+Games Played:	2000
+
+	Lost	Percent
+Chris	931	0.47
+Brian	1069	0.53
+
+	P(best)	P(worst)
+Chris	0.99	0.01
+Brian	0.01	0.99
+Stopping early due to high probabilities of best and worst.  (Threshold set to 0.95)
+--------------------------------
+Games Played:	500
+
+	Lost	Percent
+Michael	413	0.83
+Danni	87	0.17
+
+	P(best)	P(worst)
+Michael	0.00	1.00
+Danni	1.00	0.00
+Stopping early due to high probabilities of best and worst.  (Threshold set to 0.95)
+--------------------------------
+Games Played:	500
+
+	Lost	Percent
+Michael	428	0.86
+Brian	72	0.14
+
+	P(best)	P(worst)
+Michael	0.00	1.00
+Brian	1.00	0.00
+Stopping early due to high probabilities of best and worst.  (Threshold set to 0.95)
+--------------------------------
+Games Played:	500
+
+	Lost	Percent
+Danni	267	0.53
+Brian	233	0.47
+
+	P(best)	P(worst)
+Danni	0.18	0.82
+Brian	0.82	0.18
+--------------------------------
+Games Played:	1000
+
+	Lost	Percent
+Danni	517	0.52
+Brian	483	0.48
+
+	P(best)	P(worst)
+Danni	0.23	0.77
+Brian	0.77	0.23
+--------------------------------
+Games Played:	1500
+
+	Lost	Percent
+Danni	773	0.52
+Brian	727	0.48
+
+	P(best)	P(worst)
+Danni	0.18	0.82
+Brian	0.82	0.18
+--------------------------------
+Games Played:	2000
+
+	Lost	Percent
+Danni	1030	0.52
+Brian	970	0.48
+
+	P(best)	P(worst)
+Danni	0.13	0.87
+Brian	0.87	0.13
+--------------------------------
+Games Played:	2500
+
+	Lost	Percent
+Danni	1276	0.51
+Brian	1224	0.49
+
+	P(best)	P(worst)
+Danni	0.20	0.80
+Brian	0.80	0.20
+--------------------------------
+Games Played:	3000
+
+	Lost	Percent
+Danni	1532	0.51
+Brian	1468	0.49
+
+	P(best)	P(worst)
+Danni	0.15	0.85
+Brian	0.85	0.15
+--------------------------------
+Games Played:	3500
+
+	Lost	Percent
+Danni	1788	0.51
+Brian	1712	0.49
+
+	P(best)	P(worst)
+Danni	0.13	0.87
+Brian	0.87	0.13
+--------------------------------
+Games Played:	4000
+
+	Lost	Percent
+Danni	2058	0.51
+Brian	1942	0.49
+
+	P(best)	P(worst)
+Danni	0.05	0.95
+Brian	0.95	0.05
+--------------------------------
+Games Played:	4500
+
+	Lost	Percent
+Danni	2309	0.51
+Brian	2191	0.49
+
+	P(best)	P(worst)
+Danni	0.05	0.95
+Brian	0.95	0.05
+--------------------------------
+Games Played:	5000
+
+	Lost	Percent
+Danni	2575	0.52
+Brian	2425	0.48
+
+	P(best)	P(worst)
+Danni	0.03	0.97
+Brian	0.97	0.03
+Stopping early due to high probabilities of best and worst.  (Threshold set to 0.95)
+--------------------------------
+Games Played:	500
+
+	Lost	Percent
+Alex	123	0.25
+Chris	83	0.17
+Michael	294	0.59
+
+	P(best)	P(worst)
+Alex	0.12	0.00
+Chris	0.88	0.00
+Michael	0.00	1.00
+--------------------------------
+Games Played:	1000
+
+	Lost	Percent
+Alex	224	0.22
+Chris	175	0.17
+Michael	601	0.60
+
+	P(best)	P(worst)
+Alex	0.10	0.00
+Chris	0.90	0.00
+Michael	0.00	1.00
+--------------------------------
+Games Played:	1500
+
+	Lost	Percent
+Alex	323	0.22
+Chris	252	0.17
+Michael	925	0.62
+
+	P(best)	P(worst)
+Alex	0.04	0.00
+Chris	0.96	0.00
+Michael	0.00	1.00
+Stopping early due to high probabilities of best and worst.  (Threshold set to 0.95)
+--------------------------------
+Games Played:	500
+
+	Lost	Percent
+Alex	174	0.35
+Chris	135	0.27
+Danni	191	0.38
+
+	P(best)	P(worst)
+Alex	0.13	0.32
+Chris	0.83	0.03
+Danni	0.04	0.65
+--------------------------------
+Games Played:	1000
+
+	Lost	Percent
+Alex	346	0.35
+Chris	263	0.26
+Danni	391	0.39
+
+	P(best)	P(worst)
+Alex	0.02	0.13
+Chris	0.98	0.00
+Danni	0.00	0.86
+--------------------------------
+Games Played:	1500
+
+	Lost	Percent
+Alex	488	0.33
+Chris	427	0.28
+Danni	585	0.39
+
+	P(best)	P(worst)
+Alex	0.08	0.02
+Chris	0.92	0.00
+Danni	0.00	0.98
+--------------------------------
+Games Played:	2000
+
+	Lost	Percent
+Alex	659	0.33
+Chris	562	0.28
+Danni	779	0.39
+
+	P(best)	P(worst)
+Alex	0.02	0.01
+Chris	0.98	0.00
+Danni	0.00	0.99
+Stopping early due to high probabilities of best and worst.  (Threshold set to 0.95)
+--------------------------------
+Games Played:	500
+
+	Lost	Percent
+Alex	177	0.35
+Chris	141	0.28
+Brian	182	0.36
+
+	P(best)	P(worst)
+Alex	0.14	0.41
+Chris	0.76	0.06
+Brian	0.10	0.53
+--------------------------------
+Games Played:	1000
+
+	Lost	Percent
+Alex	351	0.35
+Chris	292	0.29
+Brian	357	0.36
+
+	P(best)	P(worst)
+Alex	0.06	0.44
+Chris	0.89	0.02
+Brian	0.05	0.55
+--------------------------------
+Games Played:	1500
+
+	Lost	Percent
+Alex	503	0.34
+Chris	444	0.30
+Brian	553	0.37
+
+	P(best)	P(worst)
+Alex	0.09	0.14
+Chris	0.90	0.00
+Brian	0.01	0.86
+--------------------------------
+Games Played:	2000
+
+	Lost	Percent
+Alex	651	0.33
+Chris	597	0.30
+Brian	752	0.38
+
+	P(best)	P(worst)
+Alex	0.13	0.02
+Chris	0.87	0.00
+Brian	0.00	0.98
+--------------------------------
+Games Played:	2500
+
+	Lost	Percent
+Alex	810	0.32
+Chris	748	0.30
+Brian	942	0.38
+
+	P(best)	P(worst)
+Alex	0.11	0.01
+Chris	0.89	0.00
+Brian	0.00	0.99
+--------------------------------
+Games Played:	3000
+
+	Lost	Percent
+Alex	978	0.33
+Chris	900	0.30
+Brian	1122	0.37
+
+	P(best)	P(worst)
+Alex	0.07	0.00
+Chris	0.93	0.00
+Brian	0.00	1.00
+--------------------------------
+Games Played:	3500
+
+	Lost	Percent
+Alex	1138	0.33
+Chris	1061	0.30
+Brian	1301	0.37
+
+	P(best)	P(worst)
+Alex	0.08	0.00
+Chris	0.92	0.00
+Brian	0.00	1.00
+--------------------------------
+Games Played:	4000
+
+	Lost	Percent
+Alex	1290	0.32
+Chris	1213	0.30
+Brian	1497	0.37
+
+	P(best)	P(worst)
+Alex	0.09	0.00
+Chris	0.91	0.00
+Brian	0.00	1.00
+--------------------------------
+Games Played:	4500
+
+	Lost	Percent
+Alex	1436	0.32
+Chris	1371	0.30
+Brian	1693	0.38
+
+	P(best)	P(worst)
+Alex	0.15	0.00
+Chris	0.85	0.00
+Brian	0.00	1.00
+--------------------------------
+Games Played:	5000
+
+	Lost	Percent
+Alex	1595	0.32
+Chris	1515	0.30
+Brian	1890	0.38
+
+	P(best)	P(worst)
+Alex	0.11	0.00
+Chris	0.89	0.00
+Brian	0.00	1.00
+--------------------------------
+Games Played:	5500
+
+	Lost	Percent
+Alex	1747	0.32
+Chris	1669	0.30
+Brian	2084	0.38
+
+	P(best)	P(worst)
+Alex	0.12	0.00
+Chris	0.88	0.00
+Brian	0.00	1.00
+--------------------------------
+Games Played:	6000
+
+	Lost	Percent
+Alex	1929	0.32
+Chris	1808	0.30
+Brian	2263	0.38
+
+	P(best)	P(worst)
+Alex	0.04	0.00
+Chris	0.96	0.00
+Brian	0.00	1.00
+Stopping early due to high probabilities of best and worst.  (Threshold set to 0.95)
+--------------------------------
+Games Played:	500
+
+	Lost	Percent
+Alex	96	0.19
+Michael	281	0.56
+Danni	123	0.25
+
+	P(best)	P(worst)
+Alex	0.78	0.00
+Michael	0.00	1.00
+Danni	0.22	0.00
+--------------------------------
+Games Played:	1000
+
+	Lost	Percent
+Alex	190	0.19
+Michael	568	0.57
+Danni	242	0.24
+
+	P(best)	P(worst)
+Alex	0.91	0.00
+Michael	0.00	1.00
+Danni	0.09	0.00
+--------------------------------
+Games Played:	1500
+
+	Lost	Percent
+Alex	295	0.20
+Michael	851	0.57
+Danni	354	0.24
+
+	P(best)	P(worst)
+Alex	0.93	0.00
+Michael	0.00	1.00
+Danni	0.07	0.00
+--------------------------------
+Games Played:	2000
+
+	Lost	Percent
+Alex	390	0.20
+Michael	1153	0.58
+Danni	457	0.23
+
+	P(best)	P(worst)
+Alex	0.94	0.00
+Michael	0.00	1.00
+Danni	0.06	0.00
+--------------------------------
+Games Played:	2500
+
+	Lost	Percent
+Alex	498	0.20
+Michael	1436	0.57
+Danni	566	0.23
+
+	P(best)	P(worst)
+Alex	0.94	0.00
+Michael	0.00	1.00
+Danni	0.06	0.00
+--------------------------------
+Games Played:	3000
+
+	Lost	Percent
+Alex	602	0.20
+Michael	1724	0.57
+Danni	674	0.22
+
+	P(best)	P(worst)
+Alex	0.93	0.00
+Michael	0.00	1.00
+Danni	0.07	0.00
+--------------------------------
+Games Played:	3500
+
+	Lost	Percent
+Alex	703	0.20
+Michael	2016	0.58
+Danni	781	0.22
+
+	P(best)	P(worst)
+Alex	0.94	0.00
+Michael	0.00	1.00
+Danni	0.06	0.00
+--------------------------------
+Games Played:	4000
+
+	Lost	Percent
+Alex	805	0.20
+Michael	2299	0.57
+Danni	896	0.22
+
+	P(best)	P(worst)
+Alex	0.96	0.00
+Michael	0.00	1.00
+Danni	0.04	0.00
+Stopping early due to high probabilities of best and worst.  (Threshold set to 0.95)
+--------------------------------
+Games Played:	500
+
+	Lost	Percent
+Alex	88	0.18
+Michael	300	0.60
+Brian	112	0.22
+
+	P(best)	P(worst)
+Alex	0.75	0.00
+Michael	0.00	1.00
+Brian	0.25	0.00
+--------------------------------
+Games Played:	1000
+
+	Lost	Percent
+Alex	211	0.21
+Michael	577	0.58
+Brian	212	0.21
+
+	P(best)	P(worst)
+Alex	0.50	0.00
+Michael	0.00	1.00
+Brian	0.50	0.00
+--------------------------------
+Games Played:	1500
+
+	Lost	Percent
+Alex	309	0.21
+Michael	858	0.57
+Brian	333	0.22
+
+	P(best)	P(worst)
+Alex	0.72	0.00
+Michael	0.00	1.00
+Brian	0.28	0.00
+--------------------------------
+Games Played:	2000
+
+	Lost	Percent
+Alex	422	0.21
+Michael	1143	0.57
+Brian	435	0.22
+
+	P(best)	P(worst)
+Alex	0.61	0.00
+Michael	0.00	1.00
+Brian	0.39	0.00
+--------------------------------
+Games Played:	2500
+
+	Lost	Percent
+Alex	530	0.21
+Michael	1401	0.56
+Brian	569	0.23
+
+	P(best)	P(worst)
+Alex	0.80	0.00
+Michael	0.00	1.00
+Brian	0.20	0.00
+--------------------------------
+Games Played:	3000
+
+	Lost	Percent
+Alex	638	0.21
+Michael	1680	0.56
+Brian	682	0.23
+
+	P(best)	P(worst)
+Alex	0.83	0.00
+Michael	0.00	1.00
+Brian	0.17	0.00
+--------------------------------
+Games Played:	3500
+
+	Lost	Percent
+Alex	726	0.21
+Michael	1971	0.56
+Brian	803	0.23
+
+	P(best)	P(worst)
+Alex	0.94	0.00
+Michael	0.00	1.00
+Brian	0.06	0.00
+--------------------------------
+Games Played:	4000
+
+	Lost	Percent
+Alex	832	0.21
+Michael	2255	0.56
+Brian	913	0.23
+
+	P(best)	P(worst)
+Alex	0.94	0.00
+Michael	0.00	1.00
+Brian	0.06	0.00
+--------------------------------
+Games Played:	4500
+
+	Lost	Percent
+Alex	948	0.21
+Michael	2529	0.56
+Brian	1023	0.23
+
+	P(best)	P(worst)
+Alex	0.91	0.00
+Michael	0.00	1.00
+Brian	0.09	0.00
+--------------------------------
+Games Played:	5000
+
+	Lost	Percent
+Alex	1043	0.21
+Michael	2837	0.57
+Brian	1120	0.22
+
+	P(best)	P(worst)
+Alex	0.91	0.00
+Michael	0.00	1.00
+Brian	0.09	0.00
+--------------------------------
+Games Played:	5500
+
+	Lost	Percent
+Alex	1149	0.21
+Michael	3117	0.57
+Brian	1234	0.22
+
+	P(best)	P(worst)
+Alex	0.93	0.00
+Michael	0.00	1.00
+Brian	0.07	0.00
+--------------------------------
+Games Played:	6000
+
+	Lost	Percent
+Alex	1236	0.21
+Michael	3414	0.57
+Brian	1350	0.23
+
+	P(best)	P(worst)
+Alex	0.97	0.00
+Michael	0.00	1.00
+Brian	0.03	0.00
+Stopping early due to high probabilities of best and worst.  (Threshold set to 0.95)
+--------------------------------
+Games Played:	500
+
+	Lost	Percent
+Alex	169	0.34
+Danni	160	0.32
+Brian	171	0.34
+
+	P(best)	P(worst)
+Alex	0.29	0.37
+Danni	0.45	0.23
+Brian	0.26	0.40
+--------------------------------
+Games Played:	1000
+
+	Lost	Percent
+Alex	312	0.31
+Danni	330	0.33
+Brian	358	0.36
+
+	P(best)	P(worst)
+Alex	0.63	0.08
+Danni	0.30	0.22
+Brian	0.07	0.70
+--------------------------------
+Games Played:	1500
+
+	Lost	Percent
+Alex	458	0.31
+Danni	501	0.33
+Brian	541	0.36
+
+	P(best)	P(worst)
+Alex	0.83	0.02
+Danni	0.16	0.18
+Brian	0.02	0.80
+--------------------------------
+Games Played:	2000
+
+	Lost	Percent
+Alex	616	0.31
+Danni	663	0.33
+Brian	721	0.36
+
+	P(best)	P(worst)
+Alex	0.83	0.01
+Danni	0.16	0.12
+Brian	0.01	0.87
+--------------------------------
+Games Played:	2500
+
+	Lost	Percent
+Alex	775	0.31
+Danni	840	0.34
+Brian	885	0.35
+
+	P(best)	P(worst)
+Alex	0.89	0.01
+Danni	0.10	0.20
+Brian	0.01	0.79
+--------------------------------
+Games Played:	3000
+
+	Lost	Percent
+Alex	934	0.31
+Danni	999	0.33
+Brian	1067	0.36
+
+	P(best)	P(worst)
+Alex	0.88	0.01
+Danni	0.12	0.11
+Brian	0.00	0.88
+--------------------------------
+Games Played:	3500
+
+	Lost	Percent
+Alex	1089	0.31
+Danni	1160	0.33
+Brian	1251	0.36
+
+	P(best)	P(worst)
+Alex	0.89	0.00
+Danni	0.11	0.06
+Brian	0.00	0.94
+--------------------------------
+Games Played:	4000
+
+	Lost	Percent
+Alex	1249	0.31
+Danni	1331	0.33
+Brian	1420	0.35
+
+	P(best)	P(worst)
+Alex	0.91	0.00
+Danni	0.08	0.07
+Brian	0.00	0.93
+--------------------------------
+Games Played:	4500
+
+	Lost	Percent
+Alex	1403	0.31
+Danni	1509	0.34
+Brian	1588	0.35
+
+	P(best)	P(worst)
+Alex	0.96	0.00
+Danni	0.04	0.11
+Brian	0.00	0.89
+--------------------------------
+Games Played:	5000
+
+	Lost	Percent
+Alex	1558	0.31
+Danni	1673	0.33
+Brian	1769	0.35
+
+	P(best)	P(worst)
+Alex	0.96	0.00
+Danni	0.04	0.08
+Brian	0.00	0.92
+--------------------------------
+Games Played:	5500
+
+	Lost	Percent
+Alex	1694	0.31
+Danni	1859	0.34
+Brian	1947	0.35
+
+	P(best)	P(worst)
+Alex	0.99	0.00
+Danni	0.01	0.10
+Brian	0.00	0.90
+--------------------------------
+Games Played:	6000
+
+	Lost	Percent
+Alex	1853	0.31
+Danni	2052	0.34
+Brian	2095	0.35
+
+	P(best)	P(worst)
+Alex	1.00	0.00
+Danni	0.00	0.28
+Brian	0.00	0.72
+--------------------------------
+Games Played:	6500
+
+	Lost	Percent
+Alex	2005	0.31
+Danni	2241	0.34
+Brian	2254	0.35
+
+	P(best)	P(worst)
+Alex	1.00	0.00
+Danni	0.00	0.43
+Brian	0.00	0.57
+--------------------------------
+Games Played:	7000
+
+	Lost	Percent
+Alex	2155	0.31
+Danni	2407	0.34
+Brian	2438	0.35
+
+	P(best)	P(worst)
+Alex	1.00	0.00
+Danni	0.00	0.34
+Brian	0.00	0.66
+--------------------------------
+Games Played:	7500
+
+	Lost	Percent
+Alex	2322	0.31
+Danni	2566	0.34
+Brian	2612	0.35
+
+	P(best)	P(worst)
+Alex	1.00	0.00
+Danni	0.00	0.28
+Brian	0.00	0.72
+--------------------------------
+Games Played:	8000
+
+	Lost	Percent
+Alex	2467	0.31
+Danni	2746	0.34
+Brian	2787	0.35
+
+	P(best)	P(worst)
+Alex	1.00	0.00
+Danni	0.00	0.30
+Brian	0.00	0.70
+--------------------------------
+Games Played:	8500
+
+	Lost	Percent
+Alex	2626	0.31
+Danni	2904	0.34
+Brian	2970	0.35
+
+	P(best)	P(worst)
+Alex	1.00	0.00
+Danni	0.00	0.22
+Brian	0.00	0.78
+--------------------------------
+Games Played:	9000
+
+	Lost	Percent
+Alex	2791	0.31
+Danni	3091	0.34
+Brian	3118	0.35
+
+	P(best)	P(worst)
+Alex	1.00	0.00
+Danni	0.00	0.38
+Brian	0.00	0.62
+--------------------------------
+Games Played:	9500
+
+	Lost	Percent
+Alex	2958	0.31
+Danni	3259	0.34
+Brian	3283	0.35
+
+	P(best)	P(worst)
+Alex	1.00	0.00
+Danni	0.00	0.40
+Brian	0.00	0.60
+--------------------------------
+Games Played:	10000
+
+	Lost	Percent
+Alex	3108	0.31
+Danni	3444	0.34
+Brian	3448	0.34
+
+	P(best)	P(worst)
+Alex	1.00	0.00
+Danni	0.00	0.48
+Brian	0.00	0.52
+--------------------------------
+Games Played:	10500
+
+	Lost	Percent
+Alex	3273	0.31
+Danni	3605	0.34
+Brian	3622	0.34
+
+	P(best)	P(worst)
+Alex	1.00	0.00
+Danni	0.00	0.42
+Brian	0.00	0.58
+--------------------------------
+Games Played:	11000
+
+	Lost	Percent
+Alex	3438	0.31
+Danni	3754	0.34
+Brian	3808	0.35
+
+	P(best)	P(worst)
+Alex	1.00	0.00
+Danni	0.00	0.28
+Brian	0.00	0.72
+--------------------------------
+Games Played:	11500
+
+	Lost	Percent
+Alex	3577	0.31
+Danni	3927	0.34
+Brian	3996	0.35
+
+	P(best)	P(worst)
+Alex	1.00	0.00
+Danni	0.00	0.23
+Brian	0.00	0.77
+--------------------------------
+Games Played:	12000
+
+	Lost	Percent
+Alex	3745	0.31
+Danni	4101	0.34
+Brian	4154	0.35
+
+	P(best)	P(worst)
+Alex	1.00	0.00
+Danni	0.00	0.28
+Brian	0.00	0.72
+--------------------------------
+Games Played:	12500
+
+	Lost	Percent
+Alex	3898	0.31
+Danni	4281	0.34
+Brian	4321	0.35
+
+	P(best)	P(worst)
+Alex	1.00	0.00
+Danni	0.00	0.33
+Brian	0.00	0.67
+--------------------------------
+Games Played:	13000
+
+	Lost	Percent
+Alex	4054	0.31
+Danni	4454	0.34
+Brian	4492	0.35
+
+	P(best)	P(worst)
+Alex	1.00	0.00
+Danni	0.00	0.36
+Brian	0.00	0.64
+--------------------------------
+Games Played:	13500
+
+	Lost	Percent
+Alex	4230	0.31
+Danni	4622	0.34
+Brian	4648	0.34
+
+	P(best)	P(worst)
+Alex	1.00	0.00
+Danni	0.00	0.40
+Brian	0.00	0.60
+--------------------------------
+Games Played:	14000
+
+	Lost	Percent
+Alex	4388	0.31
+Danni	4783	0.34
+Brian	4829	0.34
+
+	P(best)	P(worst)
+Alex	1.00	0.00
+Danni	0.00	0.32
+Brian	0.00	0.68
+--------------------------------
+Games Played:	14500
+
+	Lost	Percent
+Alex	4560	0.31
+Danni	4923	0.34
+Brian	5017	0.35
+
+	P(best)	P(worst)
+Alex	1.00	0.00
+Danni	0.00	0.18
+Brian	0.00	0.82
+--------------------------------
+Games Played:	15000
+
+	Lost	Percent
+Alex	4711	0.31
+Danni	5095	0.34
+Brian	5194	0.35
+
+	P(best)	P(worst)
+Alex	1.00	0.00
+Danni	0.00	0.18
+Brian	0.00	0.82
+--------------------------------
+Games Played:	15500
+
+	Lost	Percent
+Alex	4857	0.31
+Danni	5261	0.34
+Brian	5382	0.35
+
+	P(best)	P(worst)
+Alex	1.00	0.00
+Danni	0.00	0.13
+Brian	0.00	0.87
+--------------------------------
+Games Played:	16000
+
+	Lost	Percent
+Alex	5004	0.31
+Danni	5432	0.34
+Brian	5564	0.35
+
+	P(best)	P(worst)
+Alex	1.00	0.00
+Danni	0.00	0.11
+Brian	0.00	0.89
+--------------------------------
+Games Played:	16500
+
+	Lost	Percent
+Alex	5163	0.31
+Danni	5593	0.34
+Brian	5744	0.35
+
+	P(best)	P(worst)
+Alex	1.00	0.00
+Danni	0.00	0.09
+Brian	0.00	0.91
+--------------------------------
+Games Played:	17000
+
+	Lost	Percent
+Alex	5321	0.31
+Danni	5752	0.34
+Brian	5927	0.35
+
+	P(best)	P(worst)
+Alex	1.00	0.00
+Danni	0.00	0.06
+Brian	0.00	0.94
+--------------------------------
+Games Played:	17500
+
+	Lost	Percent
+Alex	5481	0.31
+Danni	5914	0.34
+Brian	6105	0.35
+
+	P(best)	P(worst)
+Alex	1.00	0.00
+Danni	0.00	0.05
+Brian	0.00	0.95
+Stopping early due to high probabilities of best and worst.  (Threshold set to 0.95)
+--------------------------------
+Games Played:	500
+
+	Lost	Percent
+Chris	93	0.19
+Michael	301	0.60
+Danni	106	0.21
+
+	P(best)	P(worst)
+Chris	0.64	0.00
+Michael	0.00	1.00
+Danni	0.36	0.00
+--------------------------------
+Games Played:	1000
+
+	Lost	Percent
+Chris	166	0.17
+Michael	620	0.62
+Danni	214	0.21
+
+	P(best)	P(worst)
+Chris	0.90	0.00
+Michael	0.00	1.00
+Danni	0.10	0.00
+--------------------------------
+Games Played:	1500
+
+	Lost	Percent
+Chris	249	0.17
+Michael	921	0.61
+Danni	330	0.22
+
+	P(best)	P(worst)
+Chris	0.98	0.00
+Michael	0.00	1.00
+Danni	0.02	0.00
+Stopping early due to high probabilities of best and worst.  (Threshold set to 0.95)
+--------------------------------
+Games Played:	500
+
+	Lost	Percent
+Chris	103	0.21
+Michael	281	0.56
+Brian	116	0.23
+
+	P(best)	P(worst)
+Chris	0.64	0.00
+Michael	0.00	1.00
+Brian	0.36	0.00
+--------------------------------
+Games Played:	1000
+
+	Lost	Percent
+Chris	197	0.20
+Michael	572	0.57
+Brian	231	0.23
+
+	P(best)	P(worst)
+Chris	0.82	0.00
+Michael	0.00	1.00
+Brian	0.18	0.00
+--------------------------------
+Games Played:	1500
+
+	Lost	Percent
+Chris	280	0.19
+Michael	878	0.59
+Brian	342	0.23
+
+	P(best)	P(worst)
+Chris	0.94	0.00
+Michael	0.00	1.00
+Brian	0.06	0.00
+--------------------------------
+Games Played:	2000
+
+	Lost	Percent
+Chris	359	0.18
+Michael	1193	0.60
+Brian	448	0.22
+
+	P(best)	P(worst)
+Chris	0.98	0.00
+Michael	0.00	1.00
+Brian	0.02	0.00
+Stopping early due to high probabilities of best and worst.  (Threshold set to 0.95)
+--------------------------------
+Games Played:	500
+
+	Lost	Percent
+Chris	134	0.27
+Danni	188	0.38
+Brian	178	0.36
+
+	P(best)	P(worst)
+Chris	0.85	0.03
+Danni	0.05	0.59
+Brian	0.10	0.38
+--------------------------------
+Games Played:	1000
+
+	Lost	Percent
+Chris	273	0.27
+Danni	372	0.37
+Brian	355	0.35
+
+	P(best)	P(worst)
+Chris	0.97	0.00
+Danni	0.01	0.66
+Brian	0.02	0.34
+--------------------------------
+Games Played:	1500
+
+	Lost	Percent
+Chris	412	0.27
+Danni	551	0.37
+Brian	537	0.36
+
+	P(best)	P(worst)
+Chris	1.00	0.00
+Danni	0.00	0.63
+Brian	0.00	0.37
+--------------------------------
+Games Played:	2000
+
+	Lost	Percent
+Chris	563	0.28
+Danni	705	0.35
+Brian	732	0.37
+
+	P(best)	P(worst)
+Chris	1.00	0.00
+Danni	0.00	0.29
+Brian	0.00	0.71
+--------------------------------
+Games Played:	2500
+
+	Lost	Percent
+Chris	714	0.29
+Danni	886	0.35
+Brian	900	0.36
+
+	P(best)	P(worst)
+Chris	1.00	0.00
+Danni	0.00	0.39
+Brian	0.00	0.61
+--------------------------------
+Games Played:	3000
+
+	Lost	Percent
+Chris	842	0.28
+Danni	1077	0.36
+Brian	1081	0.36
+
+	P(best)	P(worst)
+Chris	1.00	0.00
+Danni	0.00	0.47
+Brian	0.00	0.53
+--------------------------------
+Games Played:	3500
+
+	Lost	Percent
+Chris	950	0.27
+Danni	1267	0.36
+Brian	1283	0.37
+
+	P(best)	P(worst)
+Chris	1.00	0.00
+Danni	0.00	0.39
+Brian	0.00	0.61
+--------------------------------
+Games Played:	4000
+
+	Lost	Percent
+Chris	1102	0.28
+Danni	1447	0.36
+Brian	1451	0.36
+
+	P(best)	P(worst)
+Chris	1.00	0.00
+Danni	0.00	0.48
+Brian	0.00	0.52
+--------------------------------
+Games Played:	4500
+
+	Lost	Percent
+Chris	1235	0.27
+Danni	1626	0.36
+Brian	1639	0.36
+
+	P(best)	P(worst)
+Chris	1.00	0.00
+Danni	0.00	0.42
+Brian	0.00	0.58
+--------------------------------
+Games Played:	5000
+
+	Lost	Percent
+Chris	1369	0.27
+Danni	1801	0.36
+Brian	1830	0.37
+
+	P(best)	P(worst)
+Chris	1.00	0.00
+Danni	0.00	0.34
+Brian	0.00	0.66
+--------------------------------
+Games Played:	5500
+
+	Lost	Percent
+Chris	1496	0.27
+Danni	1984	0.36
+Brian	2020	0.37
+
+	P(best)	P(worst)
+Chris	1.00	0.00
+Danni	0.00	0.30
+Brian	0.00	0.70
+--------------------------------
+Games Played:	6000
+
+	Lost	Percent
+Chris	1633	0.27
+Danni	2161	0.36
+Brian	2206	0.37
+
+	P(best)	P(worst)
+Chris	1.00	0.00
+Danni	0.00	0.27
+Brian	0.00	0.73
+--------------------------------
+Games Played:	6500
+
+	Lost	Percent
+Chris	1774	0.27
+Danni	2324	0.36
+Brian	2402	0.37
+
+	P(best)	P(worst)
+Chris	1.00	0.00
+Danni	0.00	0.15
+Brian	0.00	0.85
+--------------------------------
+Games Played:	7000
+
+	Lost	Percent
+Chris	1909	0.27
+Danni	2513	0.36
+Brian	2578	0.37
+
+	P(best)	P(worst)
+Chris	1.00	0.00
+Danni	0.00	0.20
+Brian	0.00	0.80
+--------------------------------
+Games Played:	7500
+
+	Lost	Percent
+Chris	2047	0.27
+Danni	2683	0.36
+Brian	2770	0.37
+
+	P(best)	P(worst)
+Chris	1.00	0.00
+Danni	0.00	0.14
+Brian	0.00	0.86
+--------------------------------
+Games Played:	8000
+
+	Lost	Percent
+Chris	2182	0.27
+Danni	2863	0.36
+Brian	2955	0.37
+
+	P(best)	P(worst)
+Chris	1.00	0.00
+Danni	0.00	0.13
+Brian	0.00	0.87
+--------------------------------
+Games Played:	8500
+
+	Lost	Percent
+Chris	2326	0.27
+Danni	3045	0.36
+Brian	3129	0.37
+
+	P(best)	P(worst)
+Chris	1.00	0.00
+Danni	0.00	0.16
+Brian	0.00	0.84
+--------------------------------
+Games Played:	9000
+
+	Lost	Percent
+Chris	2477	0.28
+Danni	3229	0.36
+Brian	3294	0.37
+
+	P(best)	P(worst)
+Chris	1.00	0.00
+Danni	0.00	0.23
+Brian	0.00	0.77
+--------------------------------
+Games Played:	9500
+
+	Lost	Percent
+Chris	2602	0.27
+Danni	3406	0.36
+Brian	3492	0.37
+
+	P(best)	P(worst)
+Chris	1.00	0.00
+Danni	0.00	0.16
+Brian	0.00	0.84
+--------------------------------
+Games Played:	10000
+
+	Lost	Percent
+Chris	2738	0.27
+Danni	3589	0.36
+Brian	3673	0.37
+
+	P(best)	P(worst)
+Chris	1.00	0.00
+Danni	0.00	0.18
+Brian	0.00	0.82
+--------------------------------
+Games Played:	10500
+
+	Lost	Percent
+Chris	2894	0.28
+Danni	3747	0.36
+Brian	3859	0.37
+
+	P(best)	P(worst)
+Chris	1.00	0.00
+Danni	0.00	0.12
+Brian	0.00	0.88
+--------------------------------
+Games Played:	11000
+
+	Lost	Percent
+Chris	3030	0.28
+Danni	3924	0.36
+Brian	4046	0.37
+
+	P(best)	P(worst)
+Chris	1.00	0.00
+Danni	0.00	0.09
+Brian	0.00	0.91
+--------------------------------
+Games Played:	11500
+
+	Lost	Percent
+Chris	3188	0.28
+Danni	4077	0.35
+Brian	4235	0.37
+
+	P(best)	P(worst)
+Chris	1.00	0.00
+Danni	0.00	0.05
+Brian	0.00	0.95
+Stopping early due to high probabilities of best and worst.  (Threshold set to 0.95)
+--------------------------------
+Games Played:	500
+
+	Lost	Percent
+Michael	298	0.60
+Danni	109	0.22
+Brian	93	0.19
+
+	P(best)	P(worst)
+Michael	0.00	1.00
+Danni	0.32	0.00
+Brian	0.68	0.00
+--------------------------------
+Games Played:	1000
+
+	Lost	Percent
+Michael	589	0.59
+Danni	218	0.22
+Brian	193	0.19
+
+	P(best)	P(worst)
+Michael	0.00	1.00
+Danni	0.26	0.00
+Brian	0.74	0.00
+--------------------------------
+Games Played:	1500
+
+	Lost	Percent
+Michael	894	0.60
+Danni	313	0.21
+Brian	293	0.20
+
+	P(best)	P(worst)
+Michael	0.00	1.00
+Danni	0.30	0.00
+Brian	0.70	0.00
+--------------------------------
+Games Played:	2000
+
+	Lost	Percent
+Michael	1171	0.59
+Danni	418	0.21
+Brian	411	0.21
+
+	P(best)	P(worst)
+Michael	0.00	1.00
+Danni	0.43	0.00
+Brian	0.57	0.00
+--------------------------------
+Games Played:	2500
+
+	Lost	Percent
+Michael	1433	0.57
+Danni	552	0.22
+Brian	515	0.21
+
+	P(best)	P(worst)
+Michael	0.00	1.00
+Danni	0.21	0.00
+Brian	0.79	0.00
+--------------------------------
+Games Played:	3000
+
+	Lost	Percent
+Michael	1739	0.58
+Danni	656	0.22
+Brian	605	0.20
+
+	P(best)	P(worst)
+Michael	0.00	1.00
+Danni	0.14	0.00
+Brian	0.86	0.00
+--------------------------------
+Games Played:	3500
+
+	Lost	Percent
+Michael	2006	0.57
+Danni	760	0.22
+Brian	734	0.21
+
+	P(best)	P(worst)
+Michael	0.00	1.00
+Danni	0.30	0.00
+Brian	0.70	0.00
+--------------------------------
+Games Played:	4000
+
+	Lost	Percent
+Michael	2294	0.57
+Danni	860	0.21
+Brian	846	0.21
+
+	P(best)	P(worst)
+Michael	0.00	1.00
+Danni	0.40	0.00
+Brian	0.60	0.00
+--------------------------------
+Games Played:	4500
+
+	Lost	Percent
+Michael	2592	0.58
+Danni	957	0.21
+Brian	951	0.21
+
+	P(best)	P(worst)
+Michael	0.00	1.00
+Danni	0.46	0.00
+Brian	0.54	0.00
+--------------------------------
+Games Played:	5000
+
+	Lost	Percent
+Michael	2888	0.58
+Danni	1052	0.21
+Brian	1060	0.21
+
+	P(best)	P(worst)
+Michael	0.00	1.00
+Danni	0.56	0.00
+Brian	0.44	0.00
+--------------------------------
+Games Played:	5500
+
+	Lost	Percent
+Michael	3167	0.58
+Danni	1164	0.21
+Brian	1169	0.21
+
+	P(best)	P(worst)
+Michael	0.00	1.00
+Danni	0.53	0.00
+Brian	0.47	0.00
+--------------------------------
+Games Played:	6000
+
+	Lost	Percent
+Michael	3453	0.58
+Danni	1273	0.21
+Brian	1274	0.21
+
+	P(best)	P(worst)
+Michael	0.00	1.00
+Danni	0.50	0.00
+Brian	0.50	0.00
+--------------------------------
+Games Played:	6500
+
+	Lost	Percent
+Michael	3729	0.57
+Danni	1375	0.21
+Brian	1396	0.21
+
+	P(best)	P(worst)
+Michael	0.00	1.00
+Danni	0.63	0.00
+Brian	0.37	0.00
+--------------------------------
+Games Played:	7000
+
+	Lost	Percent
+Michael	4020	0.57
+Danni	1475	0.21
+Brian	1505	0.21
+
+	P(best)	P(worst)
+Michael	0.00	1.00
+Danni	0.69	0.00
+Brian	0.31	0.00
+--------------------------------
+Games Played:	7500
+
+	Lost	Percent
+Michael	4326	0.58
+Danni	1556	0.21
+Brian	1618	0.22
+
+	P(best)	P(worst)
+Michael	0.00	1.00
+Danni	0.83	0.00
+Brian	0.17	0.00
+--------------------------------
+Games Played:	8000
+
+	Lost	Percent
+Michael	4609	0.58
+Danni	1665	0.21
+Brian	1726	0.22
+
+	P(best)	P(worst)
+Michael	0.00	1.00
+Danni	0.82	0.00
+Brian	0.18	0.00
+--------------------------------
+Games Played:	8500
+
+	Lost	Percent
+Michael	4871	0.57
+Danni	1777	0.21
+Brian	1852	0.22
+
+	P(best)	P(worst)
+Michael	0.00	1.00
+Danni	0.86	0.00
+Brian	0.14	0.00
+--------------------------------
+Games Played:	9000
+
+	Lost	Percent
+Michael	5165	0.57
+Danni	1885	0.21
+Brian	1950	0.22
+
+	P(best)	P(worst)
+Michael	0.00	1.00
+Danni	0.82	0.00
+Brian	0.18	0.00
+--------------------------------
+Games Played:	9500
+
+	Lost	Percent
+Michael	5474	0.58
+Danni	1987	0.21
+Brian	2039	0.21
+
+	P(best)	P(worst)
+Michael	0.00	1.00
+Danni	0.76	0.00
+Brian	0.24	0.00
+--------------------------------
+Games Played:	10000
+
+	Lost	Percent
+Michael	5759	0.58
+Danni	2112	0.21
+Brian	2129	0.21
+
+	P(best)	P(worst)
+Michael	0.00	1.00
+Danni	0.59	0.00
+Brian	0.41	0.00
+--------------------------------
+Games Played:	10500
+
+	Lost	Percent
+Michael	6040	0.58
+Danni	2221	0.21
+Brian	2239	0.21
+
+	P(best)	P(worst)
+Michael	0.00	1.00
+Danni	0.59	0.00
+Brian	0.41	0.00
+--------------------------------
+Games Played:	11000
+
+	Lost	Percent
+Michael	6326	0.58
+Danni	2319	0.21
+Brian	2355	0.21
+
+	P(best)	P(worst)
+Michael	0.00	1.00
+Danni	0.68	0.00
+Brian	0.32	0.00
+--------------------------------
+Games Played:	11500
+
+	Lost	Percent
+Michael	6612	0.57
+Danni	2420	0.21
+Brian	2468	0.21
+
+	P(best)	P(worst)
+Michael	0.00	1.00
+Danni	0.73	0.00
+Brian	0.27	0.00
+--------------------------------
+Games Played:	12000
+
+	Lost	Percent
+Michael	6900	0.57
+Danni	2527	0.21
+Brian	2573	0.21
+
+	P(best)	P(worst)
+Michael	0.00	1.00
+Danni	0.73	0.00
+Brian	0.27	0.00
+--------------------------------
+Games Played:	12500
+
+	Lost	Percent
+Michael	7187	0.57
+Danni	2638	0.21
+Brian	2675	0.21
+
+	P(best)	P(worst)
+Michael	0.00	1.00
+Danni	0.68	0.00
+Brian	0.32	0.00
+--------------------------------
+Games Played:	13000
+
+	Lost	Percent
+Michael	7492	0.58
+Danni	2735	0.21
+Brian	2773	0.21
+
+	P(best)	P(worst)
+Michael	0.00	1.00
+Danni	0.69	0.00
+Brian	0.31	0.00
+--------------------------------
+Games Played:	13500
+
+	Lost	Percent
+Michael	7771	0.58
+Danni	2831	0.21
+Brian	2898	0.21
+
+	P(best)	P(worst)
+Michael	0.00	1.00
+Danni	0.79	0.00
+Brian	0.21	0.00
+--------------------------------
+Games Played:	14000
+
+	Lost	Percent
+Michael	8060	0.58
+Danni	2954	0.21
+Brian	2986	0.21
+
+	P(best)	P(worst)
+Michael	0.00	1.00
+Danni	0.66	0.00
+Brian	0.34	0.00
+--------------------------------
+Games Played:	14500
+
+	Lost	Percent
+Michael	8332	0.57
+Danni	3069	0.21
+Brian	3099	0.21
+
+	P(best)	P(worst)
+Michael	0.00	1.00
+Danni	0.63	0.00
+Brian	0.37	0.00
+--------------------------------
+Games Played:	15000
+
+	Lost	Percent
+Michael	8614	0.57
+Danni	3174	0.21
+Brian	3212	0.21
+
+	P(best)	P(worst)
+Michael	0.00	1.00
+Danni	0.67	0.00
+Brian	0.33	0.00
+--------------------------------
+Games Played:	15500
+
+	Lost	Percent
+Michael	8888	0.57
+Danni	3288	0.21
+Brian	3324	0.21
+
+	P(best)	P(worst)
+Michael	0.00	1.00
+Danni	0.65	0.00
+Brian	0.35	0.00
+--------------------------------
+Games Played:	16000
+
+	Lost	Percent
+Michael	9181	0.57
+Danni	3386	0.21
+Brian	3433	0.21
+
+	P(best)	P(worst)
+Michael	0.00	1.00
+Danni	0.70	0.00
+Brian	0.30	0.00
+--------------------------------
+Games Played:	16500
+
+	Lost	Percent
+Michael	9470	0.57
+Danni	3496	0.21
+Brian	3534	0.21
+
+	P(best)	P(worst)
+Michael	0.00	1.00
+Danni	0.66	0.00
+Brian	0.34	0.00
+--------------------------------
+Games Played:	17000
+
+	Lost	Percent
+Michael	9738	0.57
+Danni	3610	0.21
+Brian	3652	0.21
+
+	P(best)	P(worst)
+Michael	0.00	1.00
+Danni	0.68	0.00
+Brian	0.32	0.00
+--------------------------------
+Games Played:	17500
+
+	Lost	Percent
+Michael	10034	0.57
+Danni	3725	0.21
+Brian	3741	0.21
+
+	P(best)	P(worst)
+Michael	0.00	1.00
+Danni	0.57	0.00
+Brian	0.43	0.00
+--------------------------------
+Games Played:	18000
+
+	Lost	Percent
+Michael	10331	0.57
+Danni	3816	0.21
+Brian	3853	0.21
+
+	P(best)	P(worst)
+Michael	0.00	1.00
+Danni	0.66	0.00
+Brian	0.34	0.00
+--------------------------------
+Games Played:	18500
+
+	Lost	Percent
+Michael	10641	0.58
+Danni	3892	0.21
+Brian	3967	0.21
+
+	P(best)	P(worst)
+Michael	0.00	1.00
+Danni	0.78	0.00
+Brian	0.22	0.00
+--------------------------------
+Games Played:	19000
+
+	Lost	Percent
+Michael	10941	0.58
+Danni	3997	0.21
+Brian	4062	0.21
+
+	P(best)	P(worst)
+Michael	0.00	1.00
+Danni	0.75	0.00
+Brian	0.25	0.00
+--------------------------------
+Games Played:	19500
+
+	Lost	Percent
+Michael	11220	0.58
+Danni	4107	0.21
+Brian	4173	0.21
+
+	P(best)	P(worst)
+Michael	0.00	1.00
+Danni	0.75	0.00
+Brian	0.25	0.00
+--------------------------------
+Games Played:	20000
+
+	Lost	Percent
+Michael	11507	0.58
+Danni	4212	0.21
+Brian	4281	0.21
+
+	P(best)	P(worst)
+Michael	0.00	1.00
+Danni	0.75	0.00
+Brian	0.25	0.00
+--------------------------------
+Games Played:	20500
+
+	Lost	Percent
+Michael	11790	0.58
+Danni	4312	0.21
+Brian	4398	0.21
+
+	P(best)	P(worst)
+Michael	0.00	1.00
+Danni	0.81	0.00
+Brian	0.19	0.00
+--------------------------------
+Games Played:	21000
+
+	Lost	Percent
+Michael	12085	0.58
+Danni	4399	0.21
+Brian	4516	0.22
+
+	P(best)	P(worst)
+Michael	0.00	1.00
+Danni	0.88	0.00
+Brian	0.12	0.00
+--------------------------------
+Games Played:	21500
+
+	Lost	Percent
+Michael	12368	0.58
+Danni	4493	0.21
+Brian	4639	0.22
+
+	P(best)	P(worst)
+Michael	0.00	1.00
+Danni	0.93	0.00
+Brian	0.07	0.00
+--------------------------------
+Games Played:	22000
+
+	Lost	Percent
+Michael	12666	0.58
+Danni	4580	0.21
+Brian	4754	0.22
+
+	P(best)	P(worst)
+Michael	0.00	1.00
+Danni	0.96	0.00
+Brian	0.04	0.00
+Stopping early due to high probabilities of best and worst.  (Threshold set to 0.95)
+--------------------------------
+Games Played:	500
+
+	Lost	Percent
+Alex	114	0.23
+Chris	83	0.17
+Michael	199	0.40
+Danni	104	0.21
+
+	P(best)	P(worst)
+Alex	0.12	0.01
+Chris	0.66	0.00
+Michael	0.00	0.99
+Danni	0.22	0.00
+--------------------------------
+Games Played:	1000
+
+	Lost	Percent
+Alex	220	0.22
+Chris	168	0.17
+Michael	398	0.40
+Danni	214	0.21
+
+	P(best)	P(worst)
+Alex	0.06	0.00
+Chris	0.84	0.00
+Michael	0.00	1.00
+Danni	0.10	0.00
+--------------------------------
+Games Played:	1500
+
+	Lost	Percent
+Alex	326	0.22
+Chris	258	0.17
+Michael	609	0.41
+Danni	307	0.20
+
+	P(best)	P(worst)
+Alex	0.03	0.00
+Chris	0.86	0.00
+Michael	0.00	1.00
+Danni	0.10	0.00
+--------------------------------
+Games Played:	2000
+
+	Lost	Percent
+Alex	431	0.22
+Chris	350	0.17
+Michael	797	0.40
+Danni	422	0.21
+
+	P(best)	P(worst)
+Alex	0.02	0.00
+Chris	0.94	0.00
+Michael	0.00	1.00
+Danni	0.04	0.00
+--------------------------------
+Games Played:	2500
+
+	Lost	Percent
+Alex	547	0.22
+Chris	436	0.17
+Michael	992	0.40
+Danni	525	0.21
+
+	P(best)	P(worst)
+Alex	0.01	0.00
+Chris	0.97	0.00
+Michael	0.00	1.00
+Danni	0.02	0.00
+Stopping early due to high probabilities of best and worst.  (Threshold set to 0.95)
+--------------------------------
+Games Played:	500
+
+	Lost	Percent
+Alex	124	0.25
+Chris	83	0.17
+Michael	192	0.38
+Brian	101	0.20
+
+	P(best)	P(worst)
+Alex	0.07	0.03
+Chris	0.66	0.00
+Michael	0.00	0.97
+Brian	0.28	0.01
+--------------------------------
+Games Played:	1000
+
+	Lost	Percent
+Alex	238	0.24
+Chris	161	0.16
+Michael	409	0.41
+Brian	192	0.19
+
+	P(best)	P(worst)
+Alex	0.01	0.00
+Chris	0.80	0.00
+Michael	0.00	1.00
+Brian	0.19	0.00
+--------------------------------
+Games Played:	1500
+
+	Lost	Percent
+Alex	351	0.23
+Chris	241	0.16
+Michael	621	0.41
+Brian	287	0.19
+
+	P(best)	P(worst)
+Alex	0.00	0.00
+Chris	0.88	0.00
+Michael	0.00	1.00
+Brian	0.12	0.00
+--------------------------------
+Games Played:	2000
+
+	Lost	Percent
+Alex	459	0.23
+Chris	336	0.17
+Michael	814	0.41
+Brian	391	0.20
+
+	P(best)	P(worst)
+Alex	0.00	0.00
+Chris	0.91	0.00
+Michael	0.00	1.00
+Brian	0.08	0.00
+--------------------------------
+Games Played:	2500
+
+	Lost	Percent
+Alex	571	0.23
+Chris	420	0.17
+Michael	1033	0.41
+Brian	476	0.19
+
+	P(best)	P(worst)
+Alex	0.00	0.00
+Chris	0.90	0.00
+Michael	0.00	1.00
+Brian	0.10	0.00
+--------------------------------
+Games Played:	3000
+
+	Lost	Percent
+Alex	676	0.23
+Chris	511	0.17
+Michael	1231	0.41
+Brian	582	0.19
+
+	P(best)	P(worst)
+Alex	0.00	0.00
+Chris	0.94	0.00
+Michael	0.00	1.00
+Brian	0.06	0.00
+--------------------------------
+Games Played:	3500
+
+	Lost	Percent
+Alex	789	0.23
+Chris	594	0.17
+Michael	1423	0.41
+Brian	694	0.20
+
+	P(best)	P(worst)
+Alex	0.00	0.00
+Chris	0.98	0.00
+Michael	0.00	1.00
+Brian	0.02	0.00
+Stopping early due to high probabilities of best and worst.  (Threshold set to 0.95)
+--------------------------------
+Games Played:	500
+
+	Lost	Percent
+Alex	141	0.28
+Chris	87	0.17
+Danni	136	0.27
+Brian	136	0.27
+
+	P(best)	P(worst)
+Alex	0.05	0.38
+Chris	0.83	0.01
+Danni	0.06	0.31
+Brian	0.06	0.30
+--------------------------------
+Games Played:	1000
+
+	Lost	Percent
+Alex	277	0.28
+Chris	210	0.21
+Danni	245	0.24
+Brian	268	0.27
+
+	P(best)	P(worst)
+Alex	0.02	0.53
+Chris	0.77	0.01
+Danni	0.17	0.11
+Brian	0.04	0.35
+--------------------------------
+Games Played:	1500
+
+	Lost	Percent
+Alex	412	0.27
+Chris	313	0.21
+Danni	383	0.26
+Brian	392	0.26
+
+	P(best)	P(worst)
+Alex	0.01	0.57
+Chris	0.93	0.00
+Danni	0.04	0.17
+Brian	0.02	0.26
+--------------------------------
+Games Played:	2000
+
+	Lost	Percent
+Alex	534	0.27
+Chris	416	0.21
+Danni	524	0.26
+Brian	526	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.41
+Chris	0.98	0.00
+Danni	0.01	0.28
+Brian	0.01	0.31
+--------------------------------
+Games Played:	2500
+
+	Lost	Percent
+Alex	663	0.27
+Chris	517	0.21
+Danni	661	0.26
+Brian	659	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.36
+Chris	1.00	0.00
+Danni	0.00	0.34
+Brian	0.00	0.31
+--------------------------------
+Games Played:	3000
+
+	Lost	Percent
+Alex	780	0.26
+Chris	613	0.20
+Danni	813	0.27
+Brian	794	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.16
+Chris	1.00	0.00
+Danni	0.00	0.55
+Brian	0.00	0.29
+--------------------------------
+Games Played:	3500
+
+	Lost	Percent
+Alex	917	0.26
+Chris	724	0.21
+Danni	951	0.27
+Brian	908	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.21
+Chris	1.00	0.00
+Danni	0.00	0.64
+Brian	0.00	0.15
+--------------------------------
+Games Played:	4000
+
+	Lost	Percent
+Alex	1027	0.26
+Chris	827	0.21
+Danni	1102	0.28
+Brian	1044	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.07
+Chris	1.00	0.00
+Danni	0.00	0.80
+Brian	0.00	0.14
+--------------------------------
+Games Played:	4500
+
+	Lost	Percent
+Alex	1168	0.26
+Chris	929	0.21
+Danni	1236	0.27
+Brian	1167	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.10
+Chris	1.00	0.00
+Danni	0.00	0.81
+Brian	0.00	0.09
+--------------------------------
+Games Played:	5000
+
+	Lost	Percent
+Alex	1293	0.26
+Chris	1034	0.21
+Danni	1361	0.27
+Brian	1312	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.09
+Chris	1.00	0.00
+Danni	0.00	0.72
+Brian	0.00	0.18
+--------------------------------
+Games Played:	5500
+
+	Lost	Percent
+Alex	1411	0.26
+Chris	1149	0.21
+Danni	1504	0.27
+Brian	1436	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.05
+Chris	1.00	0.00
+Danni	0.00	0.82
+Brian	0.00	0.13
+--------------------------------
+Games Played:	6000
+
+	Lost	Percent
+Alex	1549	0.26
+Chris	1269	0.21
+Danni	1626	0.27
+Brian	1556	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.09
+Chris	1.00	0.00
+Danni	0.00	0.79
+Brian	0.00	0.12
+--------------------------------
+Games Played:	6500
+
+	Lost	Percent
+Alex	1669	0.26
+Chris	1385	0.21
+Danni	1767	0.27
+Brian	1679	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.06
+Chris	1.00	0.00
+Danni	0.00	0.85
+Brian	0.00	0.08
+--------------------------------
+Games Played:	7000
+
+	Lost	Percent
+Alex	1800	0.26
+Chris	1476	0.21
+Danni	1903	0.27
+Brian	1821	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.05
+Chris	1.00	0.00
+Danni	0.00	0.84
+Brian	0.00	0.11
+--------------------------------
+Games Played:	7500
+
+	Lost	Percent
+Alex	1929	0.26
+Chris	1598	0.21
+Danni	2043	0.27
+Brian	1930	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.05
+Chris	1.00	0.00
+Danni	0.00	0.90
+Brian	0.00	0.05
+--------------------------------
+Games Played:	8000
+
+	Lost	Percent
+Alex	2059	0.26
+Chris	1701	0.21
+Danni	2175	0.27
+Brian	2065	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.05
+Chris	1.00	0.00
+Danni	0.00	0.90
+Brian	0.00	0.06
+--------------------------------
+Games Played:	8500
+
+	Lost	Percent
+Alex	2189	0.26
+Chris	1805	0.21
+Danni	2321	0.27
+Brian	2185	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.04
+Chris	1.00	0.00
+Danni	0.00	0.93
+Brian	0.00	0.03
+--------------------------------
+Games Played:	9000
+
+	Lost	Percent
+Alex	2320	0.26
+Chris	1924	0.21
+Danni	2456	0.27
+Brian	2300	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.03
+Chris	1.00	0.00
+Danni	0.00	0.95
+Brian	0.00	0.02
+--------------------------------
+Games Played:	9500
+
+	Lost	Percent
+Alex	2463	0.26
+Chris	2032	0.21
+Danni	2577	0.27
+Brian	2428	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.06
+Chris	1.00	0.00
+Danni	0.00	0.92
+Brian	0.00	0.02
+--------------------------------
+Games Played:	10000
+
+	Lost	Percent
+Alex	2606	0.26
+Chris	2132	0.21
+Danni	2709	0.27
+Brian	2553	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.10
+Chris	1.00	0.00
+Danni	0.00	0.89
+Brian	0.00	0.01
+--------------------------------
+Games Played:	10500
+
+	Lost	Percent
+Alex	2726	0.26
+Chris	2238	0.21
+Danni	2857	0.27
+Brian	2679	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.05
+Chris	1.00	0.00
+Danni	0.00	0.94
+Brian	0.00	0.01
+--------------------------------
+Games Played:	11000
+
+	Lost	Percent
+Alex	2862	0.26
+Chris	2338	0.21
+Danni	2992	0.27
+Brian	2808	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.06
+Chris	1.00	0.00
+Danni	0.00	0.93
+Brian	0.00	0.01
+--------------------------------
+Games Played:	11500
+
+	Lost	Percent
+Alex	2987	0.26
+Chris	2439	0.21
+Danni	3122	0.27
+Brian	2952	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.05
+Chris	1.00	0.00
+Danni	0.00	0.93
+Brian	0.00	0.02
+--------------------------------
+Games Played:	12000
+
+	Lost	Percent
+Alex	3136	0.26
+Chris	2541	0.21
+Danni	3241	0.27
+Brian	3082	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.10
+Chris	1.00	0.00
+Danni	0.00	0.87
+Brian	0.00	0.03
+--------------------------------
+Games Played:	12500
+
+	Lost	Percent
+Alex	3278	0.26
+Chris	2643	0.21
+Danni	3377	0.27
+Brian	3202	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.13
+Chris	1.00	0.00
+Danni	0.00	0.86
+Brian	0.00	0.01
+--------------------------------
+Games Played:	13000
+
+	Lost	Percent
+Alex	3407	0.26
+Chris	2748	0.21
+Danni	3503	0.27
+Brian	3342	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.13
+Chris	1.00	0.00
+Danni	0.00	0.84
+Brian	0.00	0.02
+--------------------------------
+Games Played:	13500
+
+	Lost	Percent
+Alex	3554	0.26
+Chris	2849	0.21
+Danni	3630	0.27
+Brian	3467	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.20
+Chris	1.00	0.00
+Danni	0.00	0.78
+Brian	0.00	0.02
+--------------------------------
+Games Played:	14000
+
+	Lost	Percent
+Alex	3687	0.26
+Chris	2959	0.21
+Danni	3756	0.27
+Brian	3598	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.22
+Chris	1.00	0.00
+Danni	0.00	0.76
+Brian	0.00	0.02
+--------------------------------
+Games Played:	14500
+
+	Lost	Percent
+Alex	3823	0.26
+Chris	3068	0.21
+Danni	3893	0.27
+Brian	3716	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.22
+Chris	1.00	0.00
+Danni	0.00	0.77
+Brian	0.00	0.01
+--------------------------------
+Games Played:	15000
+
+	Lost	Percent
+Alex	3964	0.26
+Chris	3171	0.21
+Danni	4015	0.27
+Brian	3850	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.29
+Chris	1.00	0.00
+Danni	0.00	0.69
+Brian	0.00	0.02
+--------------------------------
+Games Played:	15500
+
+	Lost	Percent
+Alex	4093	0.26
+Chris	3288	0.21
+Danni	4134	0.27
+Brian	3985	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.32
+Chris	1.00	0.00
+Danni	0.00	0.65
+Brian	0.00	0.03
+--------------------------------
+Games Played:	16000
+
+	Lost	Percent
+Alex	4218	0.26
+Chris	3391	0.21
+Danni	4285	0.27
+Brian	4106	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.25
+Chris	1.00	0.00
+Danni	0.00	0.74
+Brian	0.00	0.01
+--------------------------------
+Games Played:	16500
+
+	Lost	Percent
+Alex	4339	0.26
+Chris	3505	0.21
+Danni	4419	0.27
+Brian	4237	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.20
+Chris	1.00	0.00
+Danni	0.00	0.78
+Brian	0.00	0.02
+--------------------------------
+Games Played:	17000
+
+	Lost	Percent
+Alex	4465	0.26
+Chris	3637	0.21
+Danni	4551	0.27
+Brian	4347	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.20
+Chris	1.00	0.00
+Danni	0.00	0.79
+Brian	0.00	0.01
+--------------------------------
+Games Played:	17500
+
+	Lost	Percent
+Alex	4613	0.26
+Chris	3746	0.21
+Danni	4691	0.27
+Brian	4450	0.25
+
+	P(best)	P(worst)
+Alex	0.00	0.22
+Chris	1.00	0.00
+Danni	0.00	0.78
+Brian	0.00	0.00
+--------------------------------
+Games Played:	18000
+
+	Lost	Percent
+Alex	4738	0.26
+Chris	3865	0.21
+Danni	4825	0.27
+Brian	4572	0.25
+
+	P(best)	P(worst)
+Alex	0.00	0.20
+Chris	1.00	0.00
+Danni	0.00	0.80
+Brian	0.00	0.00
+--------------------------------
+Games Played:	18500
+
+	Lost	Percent
+Alex	4860	0.26
+Chris	3980	0.22
+Danni	4957	0.27
+Brian	4703	0.25
+
+	P(best)	P(worst)
+Alex	0.00	0.18
+Chris	1.00	0.00
+Danni	0.00	0.82
+Brian	0.00	0.00
+--------------------------------
+Games Played:	19000
+
+	Lost	Percent
+Alex	4999	0.26
+Chris	4082	0.21
+Danni	5097	0.27
+Brian	4822	0.25
+
+	P(best)	P(worst)
+Alex	0.00	0.18
+Chris	1.00	0.00
+Danni	0.00	0.82
+Brian	0.00	0.00
+--------------------------------
+Games Played:	19500
+
+	Lost	Percent
+Alex	5131	0.26
+Chris	4188	0.21
+Danni	5223	0.27
+Brian	4958	0.25
+
+	P(best)	P(worst)
+Alex	0.00	0.19
+Chris	1.00	0.00
+Danni	0.00	0.81
+Brian	0.00	0.00
+--------------------------------
+Games Played:	20000
+
+	Lost	Percent
+Alex	5259	0.26
+Chris	4297	0.21
+Danni	5355	0.27
+Brian	5089	0.25
+
+	P(best)	P(worst)
+Alex	0.00	0.19
+Chris	1.00	0.00
+Danni	0.00	0.81
+Brian	0.00	0.00
+--------------------------------
+Games Played:	20500
+
+	Lost	Percent
+Alex	5407	0.26
+Chris	4392	0.21
+Danni	5469	0.27
+Brian	5232	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.28
+Chris	1.00	0.00
+Danni	0.00	0.71
+Brian	0.00	0.00
+--------------------------------
+Games Played:	21000
+
+	Lost	Percent
+Alex	5543	0.26
+Chris	4510	0.21
+Danni	5578	0.27
+Brian	5369	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.38
+Chris	1.00	0.00
+Danni	0.00	0.61
+Brian	0.00	0.01
+--------------------------------
+Games Played:	21500
+
+	Lost	Percent
+Alex	5681	0.26
+Chris	4631	0.22
+Danni	5700	0.27
+Brian	5488	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.43
+Chris	1.00	0.00
+Danni	0.00	0.56
+Brian	0.00	0.01
+--------------------------------
+Games Played:	22000
+
+	Lost	Percent
+Alex	5809	0.26
+Chris	4743	0.22
+Danni	5831	0.27
+Brian	5617	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.42
+Chris	1.00	0.00
+Danni	0.00	0.57
+Brian	0.00	0.01
+--------------------------------
+Games Played:	22500
+
+	Lost	Percent
+Alex	5958	0.26
+Chris	4843	0.22
+Danni	5947	0.26
+Brian	5752	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.54
+Chris	1.00	0.00
+Danni	0.00	0.46
+Brian	0.00	0.01
+--------------------------------
+Games Played:	23000
+
+	Lost	Percent
+Alex	6077	0.26
+Chris	4953	0.22
+Danni	6084	0.26
+Brian	5886	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.46
+Chris	1.00	0.00
+Danni	0.00	0.53
+Brian	0.00	0.01
+--------------------------------
+Games Played:	23500
+
+	Lost	Percent
+Alex	6230	0.27
+Chris	5052	0.21
+Danni	6206	0.26
+Brian	6012	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.58
+Chris	1.00	0.00
+Danni	0.00	0.41
+Brian	0.00	0.01
+--------------------------------
+Games Played:	24000
+
+	Lost	Percent
+Alex	6358	0.26
+Chris	5155	0.21
+Danni	6334	0.26
+Brian	6153	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.58
+Chris	1.00	0.00
+Danni	0.00	0.41
+Brian	0.00	0.01
+--------------------------------
+Games Played:	24500
+
+	Lost	Percent
+Alex	6497	0.27
+Chris	5265	0.21
+Danni	6476	0.26
+Brian	6262	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.56
+Chris	1.00	0.00
+Danni	0.00	0.44
+Brian	0.00	0.01
+--------------------------------
+Games Played:	25000
+
+	Lost	Percent
+Alex	6633	0.27
+Chris	5363	0.21
+Danni	6604	0.26
+Brian	6400	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.59
+Chris	1.00	0.00
+Danni	0.00	0.41
+Brian	0.00	0.01
+--------------------------------
+Games Played:	25500
+
+	Lost	Percent
+Alex	6754	0.26
+Chris	5479	0.21
+Danni	6734	0.26
+Brian	6533	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.57
+Chris	1.00	0.00
+Danni	0.00	0.42
+Brian	0.00	0.01
+--------------------------------
+Games Played:	26000
+
+	Lost	Percent
+Alex	6886	0.26
+Chris	5572	0.21
+Danni	6861	0.26
+Brian	6681	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.57
+Chris	1.00	0.00
+Danni	0.00	0.42
+Brian	0.00	0.01
+--------------------------------
+Games Played:	26500
+
+	Lost	Percent
+Alex	7025	0.27
+Chris	5684	0.21
+Danni	6985	0.26
+Brian	6806	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.63
+Chris	1.00	0.00
+Danni	0.00	0.36
+Brian	0.00	0.01
+--------------------------------
+Games Played:	27000
+
+	Lost	Percent
+Alex	7157	0.27
+Chris	5789	0.21
+Danni	7129	0.26
+Brian	6925	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.58
+Chris	1.00	0.00
+Danni	0.00	0.41
+Brian	0.00	0.01
+--------------------------------
+Games Played:	27500
+
+	Lost	Percent
+Alex	7281	0.26
+Chris	5890	0.21
+Danni	7283	0.26
+Brian	7046	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.49
+Chris	1.00	0.00
+Danni	0.00	0.51
+Brian	0.00	0.01
+--------------------------------
+Games Played:	28000
+
+	Lost	Percent
+Alex	7405	0.26
+Chris	5996	0.21
+Danni	7421	0.27
+Brian	7178	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.45
+Chris	1.00	0.00
+Danni	0.00	0.55
+Brian	0.00	0.01
+--------------------------------
+Games Played:	28500
+
+	Lost	Percent
+Alex	7542	0.26
+Chris	6113	0.21
+Danni	7554	0.27
+Brian	7291	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.47
+Chris	1.00	0.00
+Danni	0.00	0.53
+Brian	0.00	0.00
+--------------------------------
+Games Played:	29000
+
+	Lost	Percent
+Alex	7662	0.26
+Chris	6239	0.22
+Danni	7691	0.27
+Brian	7408	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.41
+Chris	1.00	0.00
+Danni	0.00	0.59
+Brian	0.00	0.00
+--------------------------------
+Games Played:	29500
+
+	Lost	Percent
+Alex	7790	0.26
+Chris	6343	0.22
+Danni	7827	0.27
+Brian	7540	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.39
+Chris	1.00	0.00
+Danni	0.00	0.60
+Brian	0.00	0.00
+--------------------------------
+Games Played:	30000
+
+	Lost	Percent
+Alex	7939	0.26
+Chris	6439	0.21
+Danni	7954	0.27
+Brian	7668	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.46
+Chris	1.00	0.00
+Danni	0.00	0.54
+Brian	0.00	0.00
+--------------------------------
+Games Played:	30500
+
+	Lost	Percent
+Alex	8068	0.26
+Chris	6565	0.22
+Danni	8081	0.26
+Brian	7786	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.46
+Chris	1.00	0.00
+Danni	0.00	0.54
+Brian	0.00	0.00
+--------------------------------
+Games Played:	31000
+
+	Lost	Percent
+Alex	8198	0.26
+Chris	6660	0.21
+Danni	8229	0.27
+Brian	7913	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.40
+Chris	1.00	0.00
+Danni	0.00	0.60
+Brian	0.00	0.00
+--------------------------------
+Games Played:	31500
+
+	Lost	Percent
+Alex	8321	0.26
+Chris	6775	0.22
+Danni	8360	0.27
+Brian	8044	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.38
+Chris	1.00	0.00
+Danni	0.00	0.62
+Brian	0.00	0.00
+--------------------------------
+Games Played:	32000
+
+	Lost	Percent
+Alex	8452	0.26
+Chris	6878	0.21
+Danni	8508	0.27
+Brian	8162	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.34
+Chris	1.00	0.00
+Danni	0.00	0.66
+Brian	0.00	0.00
+--------------------------------
+Games Played:	32500
+
+	Lost	Percent
+Alex	8582	0.26
+Chris	6987	0.21
+Danni	8650	0.27
+Brian	8281	0.25
+
+	P(best)	P(worst)
+Alex	0.00	0.30
+Chris	1.00	0.00
+Danni	0.00	0.70
+Brian	0.00	0.00
+--------------------------------
+Games Played:	33000
+
+	Lost	Percent
+Alex	8720	0.26
+Chris	7089	0.21
+Danni	8791	0.27
+Brian	8400	0.25
+
+	P(best)	P(worst)
+Alex	0.00	0.31
+Chris	1.00	0.00
+Danni	0.00	0.69
+Brian	0.00	0.00
+--------------------------------
+Games Played:	33500
+
+	Lost	Percent
+Alex	8860	0.26
+Chris	7190	0.21
+Danni	8934	0.27
+Brian	8516	0.25
+
+	P(best)	P(worst)
+Alex	0.00	0.29
+Chris	1.00	0.00
+Danni	0.00	0.71
+Brian	0.00	0.00
+--------------------------------
+Games Played:	34000
+
+	Lost	Percent
+Alex	8976	0.26
+Chris	7311	0.22
+Danni	9077	0.27
+Brian	8636	0.25
+
+	P(best)	P(worst)
+Alex	0.00	0.23
+Chris	1.00	0.00
+Danni	0.00	0.77
+Brian	0.00	0.00
+--------------------------------
+Games Played:	34500
+
+	Lost	Percent
+Alex	9110	0.26
+Chris	7424	0.22
+Danni	9204	0.27
+Brian	8762	0.25
+
+	P(best)	P(worst)
+Alex	0.00	0.25
+Chris	1.00	0.00
+Danni	0.00	0.75
+Brian	0.00	0.00
+--------------------------------
+Games Played:	35000
+
+	Lost	Percent
+Alex	9237	0.26
+Chris	7530	0.22
+Danni	9340	0.27
+Brian	8893	0.25
+
+	P(best)	P(worst)
+Alex	0.00	0.23
+Chris	1.00	0.00
+Danni	0.00	0.77
+Brian	0.00	0.00
+--------------------------------
+Games Played:	35500
+
+	Lost	Percent
+Alex	9371	0.26
+Chris	7644	0.22
+Danni	9459	0.27
+Brian	9026	0.25
+
+	P(best)	P(worst)
+Alex	0.00	0.27
+Chris	1.00	0.00
+Danni	0.00	0.73
+Brian	0.00	0.00
+--------------------------------
+Games Played:	36000
+
+	Lost	Percent
+Alex	9497	0.26
+Chris	7749	0.22
+Danni	9589	0.27
+Brian	9165	0.25
+
+	P(best)	P(worst)
+Alex	0.00	0.26
+Chris	1.00	0.00
+Danni	0.00	0.74
+Brian	0.00	0.00
+--------------------------------
+Games Played:	36500
+
+	Lost	Percent
+Alex	9635	0.26
+Chris	7855	0.22
+Danni	9714	0.27
+Brian	9296	0.25
+
+	P(best)	P(worst)
+Alex	0.00	0.29
+Chris	1.00	0.00
+Danni	0.00	0.71
+Brian	0.00	0.00
+--------------------------------
+Games Played:	37000
+
+	Lost	Percent
+Alex	9775	0.26
+Chris	7961	0.22
+Danni	9851	0.27
+Brian	9413	0.25
+
+	P(best)	P(worst)
+Alex	0.00	0.29
+Chris	1.00	0.00
+Danni	0.00	0.70
+Brian	0.00	0.00
+--------------------------------
+Games Played:	37500
+
+	Lost	Percent
+Alex	9921	0.26
+Chris	8071	0.22
+Danni	9972	0.27
+Brian	9536	0.25
+
+	P(best)	P(worst)
+Alex	0.00	0.36
+Chris	1.00	0.00
+Danni	0.00	0.64
+Brian	0.00	0.00
+--------------------------------
+Games Played:	38000
+
+	Lost	Percent
+Alex	10057	0.26
+Chris	8164	0.21
+Danni	10100	0.27
+Brian	9679	0.25
+
+	P(best)	P(worst)
+Alex	0.00	0.39
+Chris	1.00	0.00
+Danni	0.00	0.61
+Brian	0.00	0.00
+--------------------------------
+Games Played:	38500
+
+	Lost	Percent
+Alex	10184	0.26
+Chris	8270	0.21
+Danni	10233	0.27
+Brian	9813	0.25
+
+	P(best)	P(worst)
+Alex	0.00	0.36
+Chris	1.00	0.00
+Danni	0.00	0.64
+Brian	0.00	0.00
+--------------------------------
+Games Played:	39000
+
+	Lost	Percent
+Alex	10325	0.26
+Chris	8373	0.21
+Danni	10359	0.27
+Brian	9943	0.25
+
+	P(best)	P(worst)
+Alex	0.00	0.40
+Chris	1.00	0.00
+Danni	0.00	0.60
+Brian	0.00	0.00
+--------------------------------
+Games Played:	39500
+
+	Lost	Percent
+Alex	10464	0.26
+Chris	8487	0.21
+Danni	10470	0.27
+Brian	10079	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.48
+Chris	1.00	0.00
+Danni	0.00	0.52
+Brian	0.00	0.00
+--------------------------------
+Games Played:	40000
+
+	Lost	Percent
+Alex	10601	0.27
+Chris	8588	0.21
+Danni	10607	0.27
+Brian	10204	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.49
+Chris	1.00	0.00
+Danni	0.00	0.51
+Brian	0.00	0.00
+--------------------------------
+Games Played:	40500
+
+	Lost	Percent
+Alex	10719	0.26
+Chris	8696	0.21
+Danni	10752	0.27
+Brian	10333	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.41
+Chris	1.00	0.00
+Danni	0.00	0.59
+Brian	0.00	0.00
+--------------------------------
+Games Played:	41000
+
+	Lost	Percent
+Alex	10856	0.26
+Chris	8802	0.21
+Danni	10899	0.27
+Brian	10443	0.25
+
+	P(best)	P(worst)
+Alex	0.00	0.39
+Chris	1.00	0.00
+Danni	0.00	0.61
+Brian	0.00	0.00
+--------------------------------
+Games Played:	41500
+
+	Lost	Percent
+Alex	11000	0.27
+Chris	8901	0.21
+Danni	11039	0.27
+Brian	10560	0.25
+
+	P(best)	P(worst)
+Alex	0.00	0.39
+Chris	1.00	0.00
+Danni	0.00	0.61
+Brian	0.00	0.00
+--------------------------------
+Games Played:	42000
+
+	Lost	Percent
+Alex	11132	0.27
+Chris	8999	0.21
+Danni	11168	0.27
+Brian	10701	0.25
+
+	P(best)	P(worst)
+Alex	0.00	0.41
+Chris	1.00	0.00
+Danni	0.00	0.59
+Brian	0.00	0.00
+--------------------------------
+Games Played:	42500
+
+	Lost	Percent
+Alex	11263	0.27
+Chris	9117	0.21
+Danni	11298	0.27
+Brian	10822	0.25
+
+	P(best)	P(worst)
+Alex	0.00	0.41
+Chris	1.00	0.00
+Danni	0.00	0.59
+Brian	0.00	0.00
+--------------------------------
+Games Played:	43000
+
+	Lost	Percent
+Alex	11394	0.26
+Chris	9224	0.21
+Danni	11429	0.27
+Brian	10953	0.25
+
+	P(best)	P(worst)
+Alex	0.00	0.41
+Chris	1.00	0.00
+Danni	0.00	0.59
+Brian	0.00	0.00
+--------------------------------
+Games Played:	43500
+
+	Lost	Percent
+Alex	11517	0.26
+Chris	9347	0.21
+Danni	11554	0.27
+Brian	11082	0.25
+
+	P(best)	P(worst)
+Alex	0.00	0.41
+Chris	1.00	0.00
+Danni	0.00	0.59
+Brian	0.00	0.00
+--------------------------------
+Games Played:	44000
+
+	Lost	Percent
+Alex	11636	0.26
+Chris	9460	0.21
+Danni	11679	0.27
+Brian	11225	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.40
+Chris	1.00	0.00
+Danni	0.00	0.60
+Brian	0.00	0.00
+--------------------------------
+Games Played:	44500
+
+	Lost	Percent
+Alex	11772	0.26
+Chris	9583	0.22
+Danni	11805	0.27
+Brian	11340	0.25
+
+	P(best)	P(worst)
+Alex	0.00	0.42
+Chris	1.00	0.00
+Danni	0.00	0.58
+Brian	0.00	0.00
+--------------------------------
+Games Played:	45000
+
+	Lost	Percent
+Alex	11908	0.26
+Chris	9684	0.22
+Danni	11918	0.26
+Brian	11490	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.48
+Chris	1.00	0.00
+Danni	0.00	0.52
+Brian	0.00	0.00
+--------------------------------
+Games Played:	45500
+
+	Lost	Percent
+Alex	12036	0.26
+Chris	9787	0.22
+Danni	12057	0.26
+Brian	11620	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.45
+Chris	1.00	0.00
+Danni	0.00	0.55
+Brian	0.00	0.00
+--------------------------------
+Games Played:	46000
+
+	Lost	Percent
+Alex	12168	0.26
+Chris	9904	0.22
+Danni	12179	0.26
+Brian	11749	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.49
+Chris	1.00	0.00
+Danni	0.00	0.51
+Brian	0.00	0.00
+--------------------------------
+Games Played:	46500
+
+	Lost	Percent
+Alex	12286	0.26
+Chris	10027	0.22
+Danni	12300	0.26
+Brian	11887	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.47
+Chris	1.00	0.00
+Danni	0.00	0.53
+Brian	0.00	0.00
+--------------------------------
+Games Played:	47000
+
+	Lost	Percent
+Alex	12407	0.26
+Chris	10142	0.22
+Danni	12448	0.26
+Brian	12003	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.40
+Chris	1.00	0.00
+Danni	0.00	0.60
+Brian	0.00	0.00
+--------------------------------
+Games Played:	47500
+
+	Lost	Percent
+Alex	12530	0.26
+Chris	10248	0.22
+Danni	12592	0.27
+Brian	12130	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.35
+Chris	1.00	0.00
+Danni	0.00	0.65
+Brian	0.00	0.00
+--------------------------------
+Games Played:	48000
+
+	Lost	Percent
+Alex	12649	0.26
+Chris	10367	0.22
+Danni	12722	0.27
+Brian	12262	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.32
+Chris	1.00	0.00
+Danni	0.00	0.68
+Brian	0.00	0.00
+--------------------------------
+Games Played:	48500
+
+	Lost	Percent
+Alex	12777	0.26
+Chris	10461	0.22
+Danni	12872	0.27
+Brian	12390	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.28
+Chris	1.00	0.00
+Danni	0.00	0.72
+Brian	0.00	0.00
+--------------------------------
+Games Played:	49000
+
+	Lost	Percent
+Alex	12916	0.26
+Chris	10577	0.22
+Danni	13010	0.27
+Brian	12497	0.26
+
+	P(best)	P(worst)
+Alex	0.00	0.28
+Chris	1.00	0.00
+Danni	0.00	0.72
+Brian	0.00	0.00
+--------------------------------
+Games Played:	49500
+
+	Lost	Percent
+Alex	13041	0.26
+Chris	10686	0.22
+Danni	13156	0.27
+Brian	12617	0.25
+
+	P(best)	P(worst)
+Alex	0.00	0.24
+Chris	1.00	0.00
+Danni	0.00	0.76
+Brian	0.00	0.00
+--------------------------------
+Games Played:	50000
+
+	Lost	Percent
+Alex	13185	0.26
+Chris	10793	0.22
+Danni	13289	0.27
+Brian	12733	0.25
+
+	P(best)	P(worst)
+Alex	0.00	0.25
+Chris	1.00	0.00
+Danni	0.00	0.75
+Brian	0.00	0.00
+--------------------------------
+Games Played:	500
+
+	Lost	Percent
+Alex	107	0.21
+Michael	178	0.36
+Danni	123	0.25
+Brian	92	0.18
+
+	P(best)	P(worst)
+Alex	0.29	0.02
+Michael	0.00	0.92
+Danni	0.12	0.06
+Brian	0.59	0.00
+--------------------------------
+Games Played:	1000
+
+	Lost	Percent
+Alex	219	0.22
+Michael	382	0.38
+Danni	223	0.22
+Brian	176	0.18
+
+	P(best)	P(worst)
+Alex	0.10	0.00
+Michael	0.00	1.00
+Danni	0.08	0.00
+Brian	0.82	0.00
+--------------------------------
+Games Played:	1500
+
+	Lost	Percent
+Alex	320	0.21
+Michael	564	0.38
+Danni	334	0.22
+Brian	282	0.19
+
+	P(best)	P(worst)
+Alex	0.15	0.00
+Michael	0.00	1.00
+Danni	0.07	0.00
+Brian	0.78	0.00
+--------------------------------
+Games Played:	2000
+
+	Lost	Percent
+Alex	437	0.22
+Michael	755	0.38
+Danni	435	0.22
+Brian	373	0.19
+
+	P(best)	P(worst)
+Alex	0.05	0.00
+Michael	0.00	1.00
+Danni	0.06	0.00
+Brian	0.88	0.00
+--------------------------------
+Games Played:	2500
+
+	Lost	Percent
+Alex	548	0.22
+Michael	956	0.38
+Danni	529	0.21
+Brian	467	0.19
+
+	P(best)	P(worst)
+Alex	0.03	0.00
+Michael	0.00	1.00
+Danni	0.08	0.00
+Brian	0.89	0.00
+--------------------------------
+Games Played:	3000
+
+	Lost	Percent
+Alex	671	0.22
+Michael	1140	0.38
+Danni	622	0.21
+Brian	567	0.19
+
+	P(best)	P(worst)
+Alex	0.01	0.00
+Michael	0.00	1.00
+Danni	0.12	0.00
+Brian	0.88	0.00
+--------------------------------
+Games Played:	3500
+
+	Lost	Percent
+Alex	781	0.22
+Michael	1321	0.38
+Danni	730	0.21
+Brian	668	0.19
+
+	P(best)	P(worst)
+Alex	0.01	0.00
+Michael	0.00	1.00
+Danni	0.09	0.00
+Brian	0.90	0.00
+--------------------------------
+Games Played:	4000
+
+	Lost	Percent
+Alex	895	0.22
+Michael	1504	0.38
+Danni	838	0.21
+Brian	763	0.19
+
+	P(best)	P(worst)
+Alex	0.00	0.00
+Michael	0.00	1.00
+Danni	0.07	0.00
+Brian	0.92	0.00
+--------------------------------
+Games Played:	4500
+
+	Lost	Percent
+Alex	994	0.22
+Michael	1694	0.38
+Danni	944	0.21
+Brian	868	0.19
+
+	P(best)	P(worst)
+Alex	0.01	0.00
+Michael	0.00	1.00
+Danni	0.07	0.00
+Brian	0.92	0.00
+--------------------------------
+Games Played:	5000
+
+	Lost	Percent
+Alex	1097	0.22
+Michael	1868	0.37
+Danni	1059	0.21
+Brian	976	0.20
+
+	P(best)	P(worst)
+Alex	0.01	0.00
+Michael	0.00	1.00
+Danni	0.07	0.00
+Brian	0.92	0.00
+--------------------------------
+Games Played:	5500
+
+	Lost	Percent
+Alex	1190	0.22
+Michael	2072	0.38
+Danni	1164	0.21
+Brian	1074	0.20
+
+	P(best)	P(worst)
+Alex	0.02	0.00
+Michael	0.00	1.00
+Danni	0.05	0.00
+Brian	0.93	0.00
+--------------------------------
+Games Played:	6000
+
+	Lost	Percent
+Alex	1294	0.22
+Michael	2268	0.38
+Danni	1274	0.21
+Brian	1164	0.19
+
+	P(best)	P(worst)
+Alex	0.01	0.00
+Michael	0.00	1.00
+Danni	0.03	0.00
+Brian	0.96	0.00
+Stopping early due to high probabilities of best and worst.  (Threshold set to 0.95)
+--------------------------------
+Games Played:	500
+
+	Lost	Percent
+Chris	93	0.19
+Michael	220	0.44
+Danni	106	0.21
+Brian	81	0.16
+
+	P(best)	P(worst)
+Chris	0.30	0.00
+Michael	0.00	1.00
+Danni	0.14	0.00
+Brian	0.55	0.00
+--------------------------------
+Games Played:	1000
+
+	Lost	Percent
+Chris	175	0.17
+Michael	411	0.41
+Danni	225	0.23
+Brian	189	0.19
+
+	P(best)	P(worst)
+Chris	0.63	0.00
+Michael	0.00	1.00
+Danni	0.04	0.00
+Brian	0.33	0.00
+--------------------------------
+Games Played:	1500
+
+	Lost	Percent
+Chris	258	0.17
+Michael	633	0.42
+Danni	320	0.21
+Brian	289	0.19
+
+	P(best)	P(worst)
+Chris	0.76	0.00
+Michael	0.00	1.00
+Danni	0.04	0.00
+Brian	0.20	0.00
+--------------------------------
+Games Played:	2000
+
+	Lost	Percent
+Chris	333	0.17
+Michael	843	0.42
+Danni	439	0.22
+Brian	385	0.19
+
+	P(best)	P(worst)
+Chris	0.89	0.00
+Michael	0.00	1.00
+Danni	0.00	0.00
+Brian	0.10	0.00
+--------------------------------
+Games Played:	2500
+
+	Lost	Percent
+Chris	412	0.16
+Michael	1041	0.42
+Danni	554	0.22
+Brian	493	0.20
+
+	P(best)	P(worst)
+Chris	0.97	0.00
+Michael	0.00	1.00
+Danni	0.00	0.00
+Brian	0.03	0.00
+Stopping early due to high probabilities of best and worst.  (Threshold set to 0.95)
+--------------------------------
+Games Played:	500
+
+	Lost	Percent
+Alex	108	0.22
+Chris	66	0.13
+Michael	161	0.32
+Danni	88	0.18
+Brian	77	0.15
+
+	P(best)	P(worst)
+Alex	0.04	0.06
+Chris	0.52	0.00
+Michael	0.00	0.92
+Danni	0.16	0.01
+Brian	0.29	0.00
+--------------------------------
+Games Played:	1000
+
+	Lost	Percent
+Alex	188	0.19
+Chris	157	0.16
+Michael	308	0.31
+Danni	179	0.18
+Brian	168	0.17
+
+	P(best)	P(worst)
+Alex	0.09	0.00
+Chris	0.48	0.00
+Michael	0.00	1.00
+Danni	0.15	0.00
+Brian	0.28	0.00
+--------------------------------
+Games Played:	1500
+
+	Lost	Percent
+Alex	288	0.19
+Chris	241	0.16
+Michael	464	0.31
+Danni	261	0.17
+Brian	246	0.16
+
+	P(best)	P(worst)
+Alex	0.03	0.00
+Chris	0.44	0.00
+Michael	0.00	1.00
+Danni	0.17	0.00
+Brian	0.36	0.00
+--------------------------------
+Games Played:	2000
+
+	Lost	Percent
+Alex	369	0.18
+Chris	320	0.16
+Michael	627	0.31
+Danni	364	0.18
+Brian	320	0.16
+
+	P(best)	P(worst)
+Alex	0.04	0.00
+Chris	0.47	0.00
+Michael	0.00	1.00
+Danni	0.05	0.00
+Brian	0.45	0.00
+--------------------------------
+Games Played:	2500
+
+	Lost	Percent
+Alex	471	0.19
+Chris	394	0.16
+Michael	768	0.31
+Danni	457	0.18
+Brian	410	0.16
+
+	P(best)	P(worst)
+Alex	0.01	0.00
+Chris	0.63	0.00
+Michael	0.00	1.00
+Danni	0.03	0.00
+Brian	0.33	0.00
+--------------------------------
+Games Played:	3000
+
+	Lost	Percent
+Alex	559	0.19
+Chris	469	0.16
+Michael	928	0.31
+Danni	540	0.18
+Brian	504	0.17
+
+	P(best)	P(worst)
+Alex	0.01	0.00
+Chris	0.75	0.00
+Michael	0.00	1.00
+Danni	0.03	0.00
+Brian	0.20	0.00
+--------------------------------
+Games Played:	3500
+
+	Lost	Percent
+Alex	644	0.18
+Chris	546	0.16
+Michael	1069	0.31
+Danni	656	0.19
+Brian	585	0.17
+
+	P(best)	P(worst)
+Alex	0.01	0.00
+Chris	0.80	0.00
+Michael	0.00	1.00
+Danni	0.00	0.00
+Brian	0.19	0.00
+--------------------------------
+Games Played:	4000
+
+	Lost	Percent
+Alex	742	0.19
+Chris	633	0.16
+Michael	1215	0.30
+Danni	751	0.19
+Brian	659	0.16
+
+	P(best)	P(worst)
+Alex	0.00	0.00
+Chris	0.70	0.00
+Michael	0.00	1.00
+Danni	0.00	0.00
+Brian	0.30	0.00
+--------------------------------
+Games Played:	4500
+
+	Lost	Percent
+Alex	836	0.19
+Chris	706	0.16
+Michael	1359	0.30
+Danni	847	0.19
+Brian	752	0.17
+
+	P(best)	P(worst)
+Alex	0.00	0.00
+Chris	0.82	0.00
+Michael	0.00	1.00
+Danni	0.00	0.00
+Brian	0.18	0.00
+--------------------------------
+Games Played:	5000
+
+	Lost	Percent
+Alex	922	0.18
+Chris	786	0.16
+Michael	1522	0.30
+Danni	942	0.19
+Brian	828	0.17
+
+	P(best)	P(worst)
+Alex	0.00	0.00
+Chris	0.79	0.00
+Michael	0.00	1.00
+Danni	0.00	0.00
+Brian	0.21	0.00
+--------------------------------
+Games Played:	5500
+
+	Lost	Percent
+Alex	1016	0.18
+Chris	860	0.16
+Michael	1688	0.31
+Danni	1034	0.19
+Brian	902	0.16
+
+	P(best)	P(worst)
+Alex	0.00	0.00
+Chris	0.79	0.00
+Michael	0.00	1.00
+Danni	0.00	0.00
+Brian	0.21	0.00
+--------------------------------
+Games Played:	6000
+
+	Lost	Percent
+Alex	1112	0.19
+Chris	955	0.16
+Michael	1836	0.31
+Danni	1116	0.19
+Brian	981	0.16
+
+	P(best)	P(worst)
+Alex	0.00	0.00
+Chris	0.68	0.00
+Michael	0.00	1.00
+Danni	0.00	0.00
+Brian	0.32	0.00
+--------------------------------
+Games Played:	6500
+
+	Lost	Percent
+Alex	1190	0.18
+Chris	1035	0.16
+Michael	1998	0.31
+Danni	1209	0.19
+Brian	1068	0.16
+
+	P(best)	P(worst)
+Alex	0.00	0.00
+Chris	0.72	0.00
+Michael	0.00	1.00
+Danni	0.00	0.00
+Brian	0.27	0.00
+--------------------------------
+Games Played:	7000
+
+	Lost	Percent
+Alex	1302	0.19
+Chris	1104	0.16
+Michael	2140	0.31
+Danni	1303	0.19
+Brian	1151	0.16
+
+	P(best)	P(worst)
+Alex	0.00	0.00
+Chris	0.80	0.00
+Michael	0.00	1.00
+Danni	0.00	0.00
+Brian	0.20	0.00
+--------------------------------
+Games Played:	7500
+
+	Lost	Percent
+Alex	1393	0.19
+Chris	1198	0.16
+Michael	2278	0.30
+Danni	1407	0.19
+Brian	1224	0.16
+
+	P(best)	P(worst)
+Alex	0.00	0.00
+Chris	0.67	0.00
+Michael	0.00	1.00
+Danni	0.00	0.00
+Brian	0.33	0.00
+--------------------------------
+Games Played:	8000
+
+	Lost	Percent
+Alex	1492	0.19
+Chris	1269	0.16
+Michael	2427	0.30
+Danni	1487	0.19
+Brian	1325	0.17
+
+	P(best)	P(worst)
+Alex	0.00	0.00
+Chris	0.83	0.00
+Michael	0.00	1.00
+Danni	0.00	0.00
+Brian	0.17	0.00
+--------------------------------
+Games Played:	8500
+
+	Lost	Percent
+Alex	1583	0.19
+Chris	1343	0.16
+Michael	2586	0.30
+Danni	1586	0.19
+Brian	1402	0.16
+
+	P(best)	P(worst)
+Alex	0.00	0.00
+Chris	0.83	0.00
+Michael	0.00	1.00
+Danni	0.00	0.00
+Brian	0.17	0.00
+--------------------------------
+Games Played:	9000
+
+	Lost	Percent
+Alex	1671	0.19
+Chris	1415	0.16
+Michael	2725	0.30
+Danni	1696	0.19
+Brian	1493	0.17
+
+	P(best)	P(worst)
+Alex	0.00	0.00
+Chris	0.90	0.00
+Michael	0.00	1.00
+Danni	0.00	0.00
+Brian	0.10	0.00
+--------------------------------
+Games Played:	9500
+
+	Lost	Percent
+Alex	1765	0.19
+Chris	1486	0.16
+Michael	2871	0.30
+Danni	1796	0.19
+Brian	1582	0.17
+
+	P(best)	P(worst)
+Alex	0.00	0.00
+Chris	0.94	0.00
+Michael	0.00	1.00
+Danni	0.00	0.00
+Brian	0.06	0.00
+--------------------------------
+Games Played:	10000
+
+	Lost	Percent
+Alex	1864	0.19
+Chris	1557	0.16
+Michael	2999	0.30
+Danni	1898	0.19
+Brian	1682	0.17
+
+	P(best)	P(worst)
+Alex	0.00	0.00
+Chris	0.97	0.00
+Michael	0.00	1.00
+Danni	0.00	0.00
+Brian	0.03	0.00
+Stopping early due to high probabilities of best and worst.  (Threshold set to 0.95)
+--------------------------------------------
+|          Grand Tourney Results           |
+--------------------------------------------
+Total Tournaments Played: 26
+--------------------------------------------
+2-Player Tournaments:
+Player	Losses	Percent	Index
+Danni	2575	0.52	1.03
+Brian	2425	0.48	0.97
+
+
+Player	Losses	Percent	Index
+Alex	453	0.45	0.91
+Brian	547	0.55	1.09
+
+
+Player	Losses	Percent	Index
+Chris	70	0.14	0.28
+Michael	430	0.86	1.72
+
+
+Player	Losses	Percent	Index
+Alex	7355	0.51	1.01
+Chris	7145	0.49	0.99
+
+
+Player	Losses	Percent	Index
+Michael	428	0.86	1.71
+Brian	72	0.14	0.29
+
+
+Player	Losses	Percent	Index
+Chris	438	0.44	0.88
+Danni	562	0.56	1.12
+
+
+Player	Losses	Percent	Index
+Alex	452	0.45	0.90
+Danni	548	0.55	1.10
+
+
+Player	Losses	Percent	Index
+Alex	86	0.17	0.34
+Michael	414	0.83	1.66
+
+
+Player	Losses	Percent	Index
+Michael	413	0.83	1.65
+Danni	87	0.17	0.35
+
+
+Player	Losses	Percent	Index
+Chris	931	0.47	0.93
+Brian	1069	0.53	1.07
+
+
+--------------------------------------------
+3-Player Tournaments:
+Player	Losses	Percent	Index
+Alex	659	0.33	0.99
+Chris	562	0.28	0.84
+Danni	779	0.39	1.17
+
+
+Player	Losses	Percent	Index
+Alex	5481	0.31	0.94
+Danni	5914	0.34	1.01
+Brian	6105	0.35	1.05
+
+
+Player	Losses	Percent	Index
+Alex	1929	0.32	0.96
+Chris	1808	0.30	0.90
+Brian	2263	0.38	1.13
+
+
+Player	Losses	Percent	Index
+Alex	323	0.22	0.65
+Chris	252	0.17	0.50
+Michael	925	0.62	1.85
+
+
+Player	Losses	Percent	Index
+Michael	12666	0.58	1.73
+Danni	4580	0.21	0.62
+Brian	4754	0.22	0.65
+
+
+Player	Losses	Percent	Index
+Chris	3188	0.28	0.83
+Danni	4077	0.35	1.06
+Brian	4235	0.37	1.10
+
+
+Player	Losses	Percent	Index
+Chris	249	0.17	0.50
+Michael	921	0.61	1.84
+Danni	330	0.22	0.66
+
+
+Player	Losses	Percent	Index
+Alex	1236	0.21	0.62
+Michael	3414	0.57	1.71
+Brian	1350	0.23	0.68
+
+
+Player	Losses	Percent	Index
+Chris	359	0.18	0.54
+Michael	1193	0.60	1.79
+Brian	448	0.22	0.67
+
+
+Player	Losses	Percent	Index
+Alex	805	0.20	0.60
+Michael	2299	0.57	1.72
+Danni	896	0.22	0.67
+
+
+--------------------------------------------
+4-Player Tournaments:
+Player	Losses	Percent	Index
+Alex	789	0.23	0.90
+Chris	594	0.17	0.68
+Michael	1423	0.41	1.63
+Brian	694	0.20	0.79
+
+
+Player	Losses	Percent	Index
+Chris	412	0.16	0.66
+Michael	1041	0.42	1.67
+Danni	554	0.22	0.89
+Brian	493	0.20	0.79
+
+
+Player	Losses	Percent	Index
+Alex	547	0.22	0.88
+Chris	436	0.17	0.70
+Michael	992	0.40	1.59
+Danni	525	0.21	0.84
+
+
+Player	Losses	Percent	Index
+Alex	13185	0.26	1.05
+Chris	10793	0.22	0.86
+Danni	13289	0.27	1.06
+Brian	12733	0.25	1.02
+
+
+Player	Losses	Percent	Index
+Alex	1294	0.22	0.86
+Michael	2268	0.38	1.51
+Danni	1274	0.21	0.85
+Brian	1164	0.19	0.78
+
+
+--------------------------------------------
+5-Player Tournaments:
+Player	Losses	Percent	Index
+Alex	1864	0.19	0.93
+Chris	1557	0.16	0.78
+Michael	2999	0.30	1.50
+Danni	1898	0.19	0.95
+Brian	1682	0.17	0.84
+
+
+--------------------------------------------
+|              Final Indices               |
+--------------------------------------------
+Player	2	3	4	5	Overall
+Chris	0.77	0.69	0.72	0.78	0.74
+Brian	0.86	0.88	0.84	0.84	0.86
+Alex	0.79	0.79	0.92	0.93	0.86
+Danni	0.90	0.87	0.91	0.95	0.91
+Michael	1.69	1.77	1.60	1.50	1.64
