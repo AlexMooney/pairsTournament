@@ -24,18 +24,20 @@ from strategies.DannisStrategy import NoCardKnowledge
 from strategies.michaelStrategies import OverThinker
 from strategies.alexStrategies import CruelFoldNoCount
 from strategies.brianStrategies import noPeek
+from strategies.chrisStrategies import Interactive
 
 # Initalize strategies in dict
 strategies = {"Chris": SmartRatio(1.1),
               "Alex": CruelFoldNoCount(),
               "Danni": NoCardKnowledge(4),
               "Brian": noPeek(),
-              "Michael": OverThinker()
+              "Michael": OverThinker(),
+              "Me": Interactive()
               }
 
 for key, value in strategies.items():
     value.tourney_key = key
-              
+
 class Tourney:
     def __init__(self, strategies, games = 50000, check = 100, prob = 0.95, prior = 500):
         self.strats = strategies
@@ -60,6 +62,9 @@ class Tourney:
             self.lost[loser] += 1
             if not (g+1) % self.check:
                 self._summary(g+1)
+            if self.interactive:
+                print('%s lost.' % (loser))
+                input('Press Enter to continue.')
             if self.early:
                 break
         return self.lost
