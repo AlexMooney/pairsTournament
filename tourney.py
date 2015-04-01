@@ -46,10 +46,11 @@ class Tourney:
         self.prior = prior
         self.lost = dict.fromkeys(list(strategies.keys()), 0)
         self.early = False
-        
+        self.interactive = True
+
     def play(self):
         for g in range(self.games):
-            d = p.Dealer(self.n, verbose = True, standard = False)
+            d = p.Dealer(self.n, verbose = True, standard = False, calamity = True)
             keys = list(self.strats.values())
             shuffle(keys)
             for j, s in enumerate(keys):

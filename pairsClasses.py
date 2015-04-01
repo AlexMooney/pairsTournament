@@ -12,12 +12,13 @@ class Dealer:
 
     """
 
-    def __init__(self, noPlayers = 5, standard = False, verbose = False):
+    def __init__(self, noPlayers = 5, standard = False, calamity = False, verbose = False):
 
         self.gameState = Information()
         self.gameState.noPlayers = noPlayers
         self.verbose = verbose
         self.standard = standard
+        self.calamity = calamity
         for n in range(self.gameState.noPlayers):
             self.gameState.players.append(Player(n))
 
@@ -40,24 +41,27 @@ class Dealer:
             p.stack = []
         for p in self.gameState.players:
             p.stack = [self.gameState.draw()]
-        cardList = [sum(player.stack) for player in self.gameState.players]
+        cardList = [self.sumC(player.stack) for player in self.gameState.players]
         minPlayers = [player for player in self.gameState.players
-        if sum(player.stack) == min(cardList)]
+        if self.sumC(player.stack) == min(cardList)]
 
         while len(minPlayers) != 1:
             for player in list(minPlayers):
-                if sum(player.stack) != min(cardList):
+                if self.sumC(player.stack) != min(cardList):
                     minPlayers.remove(player)
                 else:
                     player.hit(self.gameState.draw())
                     while player.whichPair() != False:
                         self.gameState.discards.append(player.stack.pop(-1))
                         player.hit(self.gameState.draw())
-            cardList = [sum(player.stack) for player in minPlayers]
+            cardList = [self.sumC(player.stack) for player in minPlayers]
             minPlayers = [player for player in minPlayers
-                           if sum(player.stack) == min(cardList)]
+            if self.sumC(player.stack) == min(cardList)]
 
         return minPlayers[0]._index
+
+    def sumC(self, stack):
+        return sum(stack) - 7 * self.calamity * (7 in stack)
 
     def vPrint_stacks(self):
         for p in self.gameState.players:
@@ -73,6 +77,7 @@ class Dealer:
         currentIndex = self.gameState.startIndex
 
         while max(allScores) < highestScore:
+            cal = False
             currentPlayer = self.gameState.players[currentIndex]
             pre_pts = currentPlayer.getScore()
             info = deepcopy(self.gameState)
@@ -120,6 +125,8 @@ class Dealer:
                                str(currentPlayer.stack) +
                                 ' Your score: ' +
                                 str(currentPlayer.getScore()))
+                        if hitCard == 7:
+                            cal = True
 
             if pre_pts < currentPlayer.getScore() and self.standard:
                 self.vPrint('Standard: Points earned, dealing new cards to all players. Pre stacks:')
@@ -130,6 +137,8 @@ class Dealer:
                 self.vPrint('Player ' + str(first) + ' now goes first.')
                 currentIndex = first - 1
 
+            if self.calamity and cal:
+                currentIndex -= 1
             allScores = [player.getScore() for player in self.gameState.players]
             currentIndex = (currentIndex + 1) % self.gameState.noPlayers
 
