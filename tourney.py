@@ -170,20 +170,25 @@ class GrandTourney:
             print(s + '\t' + '\t'.join(self.strats[s].gt_means))
             
 
-import sys
-
-class Tee(object):
-    def __init__(self, *files):
-        self.files = files
-    def write(self, obj):
-        for f in self.files:
-            f.write(obj)
-
-f = open('tourney_log.txt', 'w')
-original = sys.stdout
-sys.stdout = Tee(sys.stdout, f)
-
-tourney = Tourney(strategies, games = 10, check = 10)
-tourney.play()
-f.close()
-sys.stdout = original
+if __name__ == "__main__":
+    log = False
+    if(log):
+        import sys
+    
+        class Tee(object):
+            def __init__(self, *files):
+                self.files = files
+            def write(self, obj):
+                for f in self.files:
+                    f.write(obj)
+    
+        f = open('tourney_log.txt', 'w')
+        original = sys.stdout
+        sys.stdout = Tee(sys.stdout, f)
+    
+    tourney = Tourney(strategies, games = 10, check = 10)
+    tourney.play()
+    
+    if(log):
+        f.close()
+        sys.stdout = original

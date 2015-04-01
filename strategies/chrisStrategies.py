@@ -143,7 +143,7 @@ class Interactive:
 
     def play(self, info):
         self._print_state(info)
-        choice = input('Your play?')
+        choice = eval(str(input('Your play?')))
         return choice
 
     def _print_state(self, info):
