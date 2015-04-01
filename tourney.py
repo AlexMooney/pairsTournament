@@ -48,8 +48,8 @@ class Tourney:
         self.early = False
         
     def play(self):
-        for g in range(self.games):  
-            d = p.Dealer(self.n)
+        for g in range(self.games):
+            d = p.Dealer(self.n, verbose = True, standard = False)
             keys = list(self.strats.values())
             shuffle(keys)
             for j, s in enumerate(keys):
@@ -173,11 +173,11 @@ class Tee(object):
         for f in self.files:
             f.write(obj)
 
-f = open('tourney_log_2.txt', 'w')
+f = open('tourney_log.txt', 'w')
 original = sys.stdout
 sys.stdout = Tee(sys.stdout, f)
 
-tourney = GrandTourney(strategies, games = 50000, check = 500)
-tourney.play(stop = False)
+tourney = Tourney(strategies, games = 10, check = 10)
+tourney.play()
 f.close()
 sys.stdout = original

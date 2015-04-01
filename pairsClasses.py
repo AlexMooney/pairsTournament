@@ -12,11 +12,12 @@ class Dealer:
 
     """
 
-    def __init__(self, noPlayers = 5):
+    def __init__(self, noPlayers = 5, standard = False, verbose = False):
 
         self.gameState = Information()
         self.gameState.noPlayers = noPlayers
-        self.verbose = False
+        self.verbose = verbose
+        self.standard = standard
         for n in range(self.gameState.noPlayers):
             self.gameState.players.append(Player(n))
 
@@ -25,14 +26,23 @@ class Dealer:
 
     def deal(self):
         for player in self.gameState.players:
-            newCard = self.gameState.draw()
-            player.stack = [newCard]
             player.strategy.player = player
 
+        self.gameState.startIndex = self.redeal()
+
+        for i, player in enumerate(self.gameState.players):
+            self.vPrint('Player ' + str(i) + '\'s stack: ' + str(player.stack))
+
+    def redeal(self):
+        '''Deal a new card to all players and determine first player. The discard list is not updated.'''
+        # any cards held can be reshuffled
+        for p in self.gameState.players:
+            p.stack = []
+        for p in self.gameState.players:
+            p.stack = [self.gameState.draw()]
         cardList = [sum(player.stack) for player in self.gameState.players]
         minPlayers = [player for player in self.gameState.players
-                       if sum(player.stack) == min(cardList)]
-
+        if sum(player.stack) == min(cardList)]
 
         while len(minPlayers) != 1:
             for player in list(minPlayers):
@@ -47,11 +57,12 @@ class Dealer:
             minPlayers = [player for player in minPlayers
                            if sum(player.stack) == min(cardList)]
 
-        startPlayer = minPlayers[0]
-        self.gameState.startIndex = self.gameState.players.index(startPlayer)
+        return minPlayers[0]._index
 
-        for i, player in enumerate(self.gameState.players):
-            self.vPrint('Player ' + str(i) + '\'s stack: ' + str(player.stack))
+    def vPrint_stacks(self):
+        for p in self.gameState.players:
+            self.vPrint('Player ' + str(p._index) + ' stack:')
+            self.vPrint(p.stack)
 
     def play(self):
         from copy import deepcopy
@@ -63,6 +74,7 @@ class Dealer:
 
         while max(allScores) < highestScore:
             currentPlayer = self.gameState.players[currentIndex]
+            pre_pts = currentPlayer.getScore()
             info = deepcopy(self.gameState)
             inStacks = self.gameState.inStacks()
             if inStacks == [] or \
@@ -90,7 +102,8 @@ class Dealer:
                            str(currentPlayer.stack) +
                             ' Your score: ' +
                             str(currentPlayer.getScore()))
-                except TypeError:
+                except(TypeError, KeyError):
+                    self.vPrint('No valid fold option given.')
                     hitCard = self.gameState.draw()
                     currentPlayer.hit(hitCard)
                     whichPair = currentPlayer.whichPair()
@@ -107,24 +120,15 @@ class Dealer:
                                str(currentPlayer.stack) +
                                 ' Your score: ' +
                                 str(currentPlayer.getScore()))
-                except KeyError:
-                    self.vPrint(str(reply) + ' is an invalid fold option.')
-                    hitCard = self.gameState.draw()
-                    currentPlayer.hit(hitCard)
-                    whichPair = currentPlayer.whichPair()
-                    if whichPair:
-                        currentPlayer.catch(hitCard)
-                        self.vPrint('You just paired for ' + str(hitCard) +
-                               ' Your stack: ' +
-                               str(currentPlayer.stack) +
-                                ' Your score: ' +
-                                str(currentPlayer.getScore()))
-                    else:
-                        self.vPrint('You just hit for ' + str(hitCard) +
-                               ' Your stack: ' +
-                               str(currentPlayer.stack) +
-                                ' Your score: ' +
-                                str(currentPlayer.getScore()))
+
+            if pre_pts < currentPlayer.getScore() and self.standard:
+                self.vPrint('Standard: Points earned, dealing new cards to all players. Pre stacks:')
+                self.vPrint_stacks()
+                first = self.redeal()
+                self.vPrint('Post stacks:')
+                self.vPrint_stacks()
+                self.vPrint('Player ' + str(first) + ' now goes first.')
+                currentIndex = first - 1
 
             allScores = [player.getScore() for player in self.gameState.players]
             currentIndex = (currentIndex + 1) % self.gameState.noPlayers
