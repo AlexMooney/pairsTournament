@@ -24,18 +24,20 @@ from strategies.DannisStrategy import NoCardKnowledge
 from strategies.michaelStrategies import OverThinker
 from strategies.alexStrategies import CruelFoldNoCount
 from strategies.brianStrategies import noPeek
+from strategies.chrisStrategies import Interactive
 
 # Initalize strategies in dict
 strategies = {"Chris": SmartRatio(1.1),
               "Alex": CruelFoldNoCount(),
               "Danni": NoCardKnowledge(4),
               "Brian": noPeek(),
-              "Michael": OverThinker()
+              "Michael": OverThinker(),
+              "Me": Interactive()
               }
 
 for key, value in strategies.items():
     value.tourney_key = key
-              
+
 class Tourney:
     def __init__(self, strategies, games = 50000, check = 100, prob = 0.95, prior = 500):
         self.strats = strategies
@@ -46,10 +48,11 @@ class Tourney:
         self.prior = prior
         self.lost = dict.fromkeys(list(strategies.keys()), 0)
         self.early = False
-        
+        self.interactive = True
+
     def play(self):
-        for g in range(self.games):  
-            d = p.Dealer(self.n)
+        for g in range(self.games):
+            d = p.Dealer(self.n, verbose = True, standard = False, calamity = True)
             keys = list(self.strats.values())
             shuffle(keys)
             for j, s in enumerate(keys):
@@ -59,6 +62,9 @@ class Tourney:
             self.lost[loser] += 1
             if not (g+1) % self.check:
                 self._summary(g+1)
+            if self.interactive:
+                print('%s lost.' % (loser))
+                input('Press Enter to continue.')
             if self.early:
                 break
         return self.lost
@@ -164,20 +170,25 @@ class GrandTourney:
             print(s + '\t' + '\t'.join(self.strats[s].gt_means))
             
 
-import sys
-
-class Tee(object):
-    def __init__(self, *files):
-        self.files = files
-    def write(self, obj):
-        for f in self.files:
-            f.write(obj)
-
-f = open('tourney_log_2.txt', 'w')
-original = sys.stdout
-sys.stdout = Tee(sys.stdout, f)
-
-tourney = GrandTourney(strategies, games = 50000, check = 500)
-tourney.play(stop = False)
-f.close()
-sys.stdout = original
+if __name__ == "__main__":
+    log = False
+    if(log):
+        import sys
+    
+        class Tee(object):
+            def __init__(self, *files):
+                self.files = files
+            def write(self, obj):
+                for f in self.files:
+                    f.write(obj)
+    
+        f = open('tourney_log.txt', 'w')
+        original = sys.stdout
+        sys.stdout = Tee(sys.stdout, f)
+    
+    tourney = Tourney(strategies, games = 10, check = 10)
+    tourney.play()
+    
+    if(log):
+        f.close()
+        sys.stdout = original

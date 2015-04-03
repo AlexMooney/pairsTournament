@@ -1,6 +1,6 @@
 # Pairs Tournament
 
-This program runs a tournament of AIs which play Continuous Pairs.
+This program runs a tournament of AIs which play Standard or Continuous Pairs.
   Each player is a Python class which is given the state of the game and decides to hit or fold.
 
 ## Pairs
