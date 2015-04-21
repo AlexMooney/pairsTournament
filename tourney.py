@@ -70,7 +70,10 @@ class Tourney:
                 self._summary(g+1)
             if self.interactive:
                 print('%s lost.' % (loser))
-                input('Press Enter to continue.')
+                try:
+                    input('Press Enter to continue.')
+                except SyntaxError:
+                    pass
             if self.early:
                 break
         return self.lost
@@ -105,7 +108,7 @@ class Tourney:
                 print(row.format(key,'%.2f' % best[keys.index(key)],
                                  '%.2f' % worst[keys.index(key)]))
             if max(best) > self.prob and max(worst) > self.prob:
-                print("Stopping early due to high probabilities"
+                print("Stopping early due to high probabilities "
                       "of best and worst. (Threshold set to %s)" % 
                       str(self.prob))
                 self.early = True
@@ -143,7 +146,10 @@ class GrandTourney:
                 for s in self.strats if s in subset}, 
                 self.games, self.check, self.prob, self.prior).play()
             if stop:
-                input("Tourney Ended")
+                try:
+                    input("Tourney ended. Press Enter to continue.")
+                except:
+                    pass
         self._grand_tourney_report()
     
     def _tourney_report(self, results):
