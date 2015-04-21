@@ -36,14 +36,13 @@ class Dealer:
 
     def redeal(self):
         '''Deal a new card to all players and determine first player. The discard list is not updated.'''
-        # any cards held can be reshuffled
         for p in self.gameState.players:
             p.stack = []
         for p in self.gameState.players:
             p.stack = [self.gameState.draw()]
         cardList = [self.sumC(player.stack) for player in self.gameState.players]
         minPlayers = [player for player in self.gameState.players
-        if self.sumC(player.stack) == min(cardList)]
+                      if self.sumC(player.stack) == min(cardList)]
 
         while len(minPlayers) != 1:
             for player in list(minPlayers):
@@ -51,13 +50,15 @@ class Dealer:
                     minPlayers.remove(player)
                 else:
                     player.hit(self.gameState.draw())
-                    while player.whichPair() != False:
+                    while player.whichPair():
                         self.gameState.discards.append(player.stack.pop(-1))
                         player.hit(self.gameState.draw())
+                    if len(player.stack) >= 5:
+                        self.redeal()
             cardList = [self.sumC(player.stack) for player in minPlayers]
             minPlayers = [player for player in minPlayers
-            if self.sumC(player.stack) == min(cardList)]
-
+                          if self.sumC(player.stack) == min(cardList)]
+            
         return minPlayers[0]._index
 
     def sumC(self, stack):
