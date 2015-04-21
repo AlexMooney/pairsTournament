@@ -24,7 +24,7 @@ from strategies.DannisStrategy import NoCardKnowledge
 from strategies.michaelStrategies import OverThinker
 from strategies.alexStrategies import CruelFoldNoCount
 from strategies.brianStrategies import noPeek
-from strategies.chrisStrategies import Interactive
+#from strategies.chrisStrategies import Interactive
 
 # Initalize strategies in dict
 strategies = {"Chris": SmartRatio(1.1),
@@ -32,13 +32,14 @@ strategies = {"Chris": SmartRatio(1.1),
               "Danni": NoCardKnowledge(4),
               "Brian": noPeek(),
               "Michael": OverThinker(),
-              "Me": Interactive()
+#              "Me": Interactive()
               }
 
 for key, value in strategies.items():
     value.tourney_key = key
 
 class Tourney:
+
     def __init__(self, strategies, games = 50000, check = 100, prob = 0.95, prior = 500):
         self.strats = strategies
         self.n = len(strategies)
@@ -48,11 +49,11 @@ class Tourney:
         self.prior = prior
         self.lost = dict.fromkeys(list(strategies.keys()), 0)
         self.early = False
-        self.interactive = True
+        self.interactive = False
 
     def play(self):
         for g in range(self.games):
-            d = p.Dealer(self.n, verbose = True, standard = False, calamity = True)
+            d = p.Dealer(self.n, verbose = False, standard = True, calamity = False)
             keys = list(self.strats.values())
             shuffle(keys)
             for j, s in enumerate(keys):
@@ -82,6 +83,7 @@ class Tourney:
     def _report_probs(self):
             prior = np.repeat(self.prior, self.n)
             posterior = prior + np.array(list(self.lost.values()))
+            keys = list(self.lost.keys())
             N = 10000
             draws = np.random.dirichlet(posterior, N)
             best = np.bincount(np.argmin(draws, axis = 1), minlength = self.n) / N
@@ -89,12 +91,15 @@ class Tourney:
     
             print("\n\tP(best)\tP(worst)")
             for i, key in enumerate(self.strats):
-                print(key + "\t" + '%.2f' % best[i] + "\t" + '%.2f' % worst[i])
+                print(key + "\t" + '%.2f' % best[keys.index(key)] + "\t" +
+                        '%.2f' % worst[keys.index(key)])
             if max(best) > self.prob and max(worst) > self.prob:
-                print("Stopping early due to high probabilities of best and worst.  (Threshold set to " + str(self.prob) + ")")
+                print("Stopping early due to high probabilities of best and worst."
+                        "(Threshold set to " + str(self.prob) + ")")
                 self.early = True
             
 class GrandTourney:
+
     def __init__(self, strategies, games = 100, check = 500, prob = 0.95, prior = 500):
         self.strats = strategies
         self.n = len(strategies)
@@ -186,7 +191,7 @@ if __name__ == "__main__":
         original = sys.stdout
         sys.stdout = Tee(sys.stdout, f)
     
-    tourney = Tourney(strategies, games = 10, check = 10)
+    tourney = Tourney(strategies, games = 10000, check = 100)
     tourney.play()
     
     if(log):
