@@ -26,13 +26,13 @@ from strategies.michaelStrategies import OverThinker
 from strategies.alexStrategies import CruelFoldNoCount
 from strategies.brianStrategies import noPeek
 from strategies.chrisStrategies import HitMe 
+from strategies.chrisStrategies import Weights
 
 # Initalize strategies in dict
-strategies = {"Chris": PureExp(),
-              "Alex": CruelFoldNoCount(),
-              "Danni": NoCardKnowledge(N=0),
-              "Brian": noPeek(),
-              "Michael": OverThinker(),
+strategies = {"Champ": PureExp(0.9, 8),
+              "Weights": Weights(0.6),
+              "Weights": Weights(1),
+              "Weights": Weights(1.6),
               "Hit": HitMe()
               }
 
