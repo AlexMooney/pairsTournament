@@ -1,6 +1,6 @@
 from __future__ import division
-from math import ceil
 from copy import copy
+from math import log
 
 class FoldLowWithHigh:
     def __init__(self, fold, hand):
@@ -154,4 +154,59 @@ class Interactive:
         print('\tpoints: %d' % (self.player.getScore()))
 
 
+class PureExp:
+    '''
+    Initial standard bot. Decides only based on expected points now 
+    from hit vs available fold.
+    '''
+    def __init__(self):
+        pass
 
+    def play(self, info):
+        hand = self.player.stack
+        fold = info.bestFold(self.player)
+        if fold[1] < self._ev_hit(self.player.stack, info.deck):
+            return fold
+        return "hit"
+
+    def _ev_hit(self, hand, deck):
+        return sum([self._p_deal(c, deck) * c for c in hand])
+
+    def _p_deal(self, c, deck):
+        return deck.count(c) / len(deck)
+
+
+class Weights:
+
+    def __init__(self):
+        pass
+
+    def _log_weight(self, k):
+        return 0.6 * log(max(12-k,1)) + 1
+
+    def play(self, info):
+        fold = info.bestFold(self.player)
+        p_lose_fold = self._p_lose(fold[1], info) 
+        p_lose_hit = 0
+        for c in self.player.stack:
+            p_lose_hit += self._p_deal(c, info.deck) * self._p_lose(c, info)
+        if p_lose_fold < p_lose_hit:
+            return fold
+        return "hit"
+
+    def _p_deal(self, c, deck):
+        return deck.count(c) / len(deck)
+
+    def _p_lose(self, c, info):
+        max_sc = max(11, 60 / len(info.players) + 1)
+        idx = self.player._index
+        scores = [p.getScore() for p in info.players]
+        scores[idx] += c
+        weights = [self._log_weight(max_sc - s) for s in scores]
+        return weights[idx] / sum(weights)
+       
+
+class HitMe:
+
+    def play(self, info):
+        return "hit"

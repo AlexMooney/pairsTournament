@@ -20,20 +20,20 @@ except ImportError:
 
 
 # Specify strategies to import here
-from strategies.chrisStrategies import SmartRatio
+from strategies.chrisStrategies import PureExp
 from strategies.DannisStrategy import NoCardKnowledge
 from strategies.michaelStrategies import OverThinker
 from strategies.alexStrategies import CruelFoldNoCount
 from strategies.brianStrategies import noPeek
-#from strategies.chrisStrategies import Interactive
+from strategies.chrisStrategies import HitMe 
 
 # Initalize strategies in dict
-strategies = {"Chris": SmartRatio(1.1),
+strategies = {"Chris": PureExp(),
               "Alex": CruelFoldNoCount(),
-              "Danni": NoCardKnowledge(4),
+              "Danni": NoCardKnowledge(N=0),
               "Brian": noPeek(),
               "Michael": OverThinker(),
-#              "Me": Interactive()
+              "Hit": HitMe()
               }
 
 for key, value in strategies.items():
@@ -139,7 +139,7 @@ class GrandTourney:
         return chain.from_iterable(combinations(keys, n)
                                    for n in range(2, len(keys)+1))
         
-    def play(self, stop = True):
+    def play(self, stop = False):
         subsets = self._create_subsets()
         for subset in subsets:
             self.results[subset] = Tourney({s:self.strats[s]
@@ -224,7 +224,7 @@ if __name__ == "__main__":
         original = sys.stdout
         sys.stdout = Tee(sys.stdout, f)
     
-    tourney = GrandTourney(strategies, games = 10, check = 10)
+    tourney = GrandTourney(strategies, games = 5000, check = 1000)
     tourney.play()
     
     if(log):
