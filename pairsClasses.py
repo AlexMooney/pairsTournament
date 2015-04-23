@@ -128,8 +128,9 @@ class Dealer:
                                 str(currentPlayer.getScore()))
                         if hitCard == 7:
                             cal = True
-
-            if pre_pts < currentPlayer.getScore() and self.standard:
+            
+            post_pts = currentPlayer.getScore()
+            if pre_pts < post_pts < highestScore and self.standard:
                 self.vPrint('Standard: Points earned, dealing new cards to all players. Pre stacks:')
                 self.vPrint_stacks()
                 first = self.redeal()
