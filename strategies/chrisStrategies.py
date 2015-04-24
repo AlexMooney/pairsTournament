@@ -186,11 +186,13 @@ class Weights:
 
     def __init__(self, mult):
         self.mult = mult
-
+        self.pe = PureExp(0.9, 8)
+        
     def _log_weight(self, k):
         return self.mult * log(max(12-k,1)) + 1
 
     def play(self, info):
+        self.pe.player = self.player
         fold = info.bestFold(self.player)
         me = self.player._index
         p_lose_fold = self._p_lose_new(fold[1], info, me) 
@@ -211,15 +213,25 @@ class Weights:
                                self._p_lose_new(c, info, j))
             p_nxt *= 1 - p_pair
         # assumption for probability of losing if reach next turn
-        p_lose_hit += p_nxt * self._p_lose_new(fold[1], info, me)
+        nxt_fold = min(fold[1], self._exp_fold(info.deck, n-1))
+        p_lose_hit += p_nxt * self._p_lose_new(nxt_fold, info, me)
         #print("Lose from hit: " + str(p_lose_hit))
         #print("Lose from fold: " + str(p_lose_fold))
+        if abs(p_lose_fold - p_lose_hit) < 0.05:
+            return self.pe.play(info)
         if p_lose_fold < p_lose_hit:
             return fold
         return "hit"
 
     def _p_deal(self, c, deck):
         return deck.count(c) / len(deck)
+
+    def _exp_fold(self, deck, trials):
+        pmf = [self._p_deal(c, deck) for c in range(1, 11)]
+        cdf = [sum(pmf[0:i]) for i in range(10)]
+        min_cdf = [1 - (1-c) ** trials for c in cdf]
+        min_pmf = [min_cdf[0]] + [min_cdf[i+1] - min_cdf[i] for i in range(9)]
+        return sum(min_pmf[c-1] * c for c in range(1,11))
 
     def _p_lose_new(self, c, info, idx):
         max_sc = max(11, 60 / len(info.players) + 1)

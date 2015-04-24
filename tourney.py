@@ -30,10 +30,10 @@ from strategies.chrisStrategies import Weights
 
 # Initalize strategies in dict
 strategies = {"Champ": PureExp(0.9, 8),
-              "Weights": Weights(0.6),
-              "Weights": Weights(1),
-              "Weights": Weights(1.6),
-              "Hit": HitMe()
+              "Weights 1.3": Weights(1.3),
+              "Weights 1.7": Weights(1.7),
+              "Weights 1.6": Weights(1.6),
+              "Weights 1.5": Weights(1.5)
               }
 
 for key, value in strategies.items():
@@ -224,7 +224,7 @@ if __name__ == "__main__":
         original = sys.stdout
         sys.stdout = Tee(sys.stdout, f)
     
-    tourney = GrandTourney(strategies, games = 5000, check = 1000)
+    tourney = GrandTourney(strategies, games = 50000, check = 5000)
     tourney.play()
     
     if(log):
