@@ -17,129 +17,6 @@ class FoldLowWithHigh:
             return best
         return "Hit"
 
-class Expectation:
-    '''
-    Determines optimal play by computing the expected points per turn
-    until next points are earned.
-    '''
-    def __init__(self, tm = 5, high = 10, burn = 5):
-        self.TURN_MAX = tm
-        self.cards = tuple(range(1, high + 1))
-        self.burn = burn
-
-    def play(self, info):
-        self.discards = info.discards
-        deck = info.deck
-        hand = tuple(self.player.stack)
-        fold = info.bestFold(self.player)
-        ev_hit = self._turn(hand, deck, 1)
- 
-        if fold[1] / 2 < ev_hit:
-             return fold
-        return ev_hit
-
-    def _p_deal(self, c, deck):
-        return deck.count(c) / len(deck)
-
-    def _p_fold(self, c, deck):
-        return self._p_deal(c, deck)
-
-    def _hit(self, hand, deck, trn):
-        return sum([self._p_deal(c, deck) * c for c in hand]) / (trn+1)
-
-    def _fold(self, ev_hit, deck, trn):
-        prob = sum([self._p_fold(c, deck) for c in self.cards if c < ev_hit])
-        ev = 0
-        if prob > 0:
-            ev = sum([self._p_fold(c, deck) * c for c in self.cards if c < ev_hit]) / prob / (trn+1)
-        return (prob, ev)
-
-    def _reshuffle(self, deck):
-        return self.discards + deck
-
-    def _turn(self, hand, deck, trn):
-        ev_hit = self._hit(hand, deck, trn)
-        if trn < self.TURN_MAX:
-            for c in self.cards:
-                if c not in hand and c in deck:
-                    d = copy(deck)
-                    d.remove(c)
-                    if len(d) == self.burn:
-                        d = self._reshuffle(d)
-                    ev_hit += self._turn(hand + tuple([c]), d, trn+1) * self._p_deal(c, deck)
-                    
-        if trn == 1:
-            return ev_hit            
-        f = self._fold(ev_hit, deck, trn)
-        p_fold = f[0]
-        ev_fold = f[1]
-        return p_fold * ev_fold + (1-p_fold) * ev_hit
-
-
-class Expectation2:
-    '''
-    Determines optimal play by computing the expected points per turn
-    until next points are earned.
-    '''
-    def __init__(self, tm = 5, high = 10, burn = 5):
-        self.TURN_MAX = tm
-        self.cards = tuple(range(1, high + 1))
-        self.burn = burn
-
-    def play(self, info):
-        self.discards = info.discards
-        deck = info.deck
-        hand = tuple(self.player.stack)
-        fold = info.bestFold(self.player)
-        ev_hit = self._turn(hand, deck, 1)
- 
-        if fold[1] / 2 < ev_hit:
-             return fold
-        return ev_hit
-
-    def _p_deal(self, c, deck):
-        return deck.count(c) / len(deck)
-
-    def _p_fold(self, c, deck):
-        return self._p_deal(c, deck)
-
-    def _hit(self, hand, deck, trn):
-        return sum([self._p_deal(c, deck) * c for c in hand]) / (trn+1)
-
-    def _fold(self, ev_hit, deck, trn):
-        prob = sum([self._p_fold(c, deck) for c in self.cards if c < ev_hit])
-        ev = 0
-        if prob > 0:
-            ev = sum([self._p_fold(c, deck) * c for c in self.cards if c < ev_hit]) / prob / (trn+1)
-        return (prob, ev)
-
-    def _reshuffle(self, deck):
-        return self.discards + deck
-
-    def _turn(self, hand, deck, trn):
-        ev_hit = self._hit(hand, deck, trn)
-        if trn < self.TURN_MAX:
-            for c in self.cards:
-                if c not in hand and c in deck:
-                    d = copy(deck)
-                    d.remove(c)
-                    if len(d) == self.burn:
-                        d = self._reshuffle(d)
-                    ev_hit += self._turn(hand + tuple([c]), d, trn+1) * self._p_deal(c, deck)
-                    
-        else:
-            for c in self.cards:
-                if c not in hand and c in deck:
-                    p_not_pair = 0
-                    p_not_pair += self._p_deal(c, deck)
-                    ev_hit += 6 / (trn+1) * p_not_pair
-        if trn == 1:
-            return ev_hit            
-        f = self._fold(ev_hit, deck, trn)
-        p_fold = f[0]
-        ev_fold = f[1]
-        return p_fold * ev_fold + (1-p_fold) * ev_hit
-
 class Expectation3:
     '''
     Determines optimal play by computing the expected points per turn
@@ -165,7 +42,7 @@ class Expectation3:
         if play_to - max(scores) < 6 and high_card + self.player.getScore() >= play_to:
             return fold
         ev_hit = self._turn(hand, deck, 1)
- 
+
         if fold[1] / 2 < ev_hit:
              return fold
         return ev_hit
@@ -199,14 +76,14 @@ class Expectation3:
                     if len(d) == self.burn:
                         d = self._reshuffle(d)
                     ev_hit += self._turn(hand + tuple([c]), d, trn+1) * self._p_deal(c, deck)
-                    
+
         if trn == 1:
-            return ev_hit            
+            return ev_hit
         f = self._fold(ev_hit, deck, trn)
         p_fold = f[0]
         ev_fold = f[1]
         return p_fold * ev_fold + (1-p_fold) * ev_hit
-        
+
 class Heuristic:
     '''
     Determines optimal play according to 4 simple parameters.
@@ -231,7 +108,7 @@ class Heuristic:
         if play_to - max(scores) <= self.nd and max(hand) + self.player.getScore() >= play_to:
             return fold
         return "hit"
-        
+
 class SmartRatio:
     '''
     Determines optimal play with simple ratio intended to approximate
@@ -260,4 +137,21 @@ class SmartRatio:
         if sum(hand) / fold[1] >= (self.start + self.inc*len(hand)):
             return fold
         return "hit"
+
+class Interactive:
+    '''Allows interactive play with bots.'''
+
+    def play(self, info):
+        self._print_state(info)
+        choice = eval(str(input('Your play?')))
+        return choice
+
+    def _print_state(self, info):
+        for p in info.players:
+            print('Player %d:\tstack: %s' % (p._index, str(p.stack)))
+            print('\t\tpoints: %d' % (p.getScore()))
+        print('You:\tstack:%s' % (str(self.player.stack)))
+        print('\tpoints: %d' % (self.player.getScore()))
+
+
 

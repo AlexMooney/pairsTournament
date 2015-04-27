@@ -89,7 +89,7 @@ class CruelFoldNoCount:
         for i, hp in enumerate(hitPoints):
             if i == self.player.index():
                 continue
-            if hp >= folds[0][1] and hp < folds[1][1]:
+            if len(folds) > 1 and hp >= folds[0][1] and hp < folds[1][1]:
                 pkill += sum([s*c[s]/len(deck) for s in info.players[i].stack])
 
         if info.bestFold(self.player)[1] - self.malice*pkill > self.scared*sum([s*c[s] for s in c])/len(deck) + sum([s*c[s]/len(deck) for s in self.player.stack]):
