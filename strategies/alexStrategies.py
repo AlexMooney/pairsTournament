@@ -31,6 +31,53 @@ class CardCounter:
         else:
             return 'fold'
 
+class StandardCardCounter:
+    """This strategy folds based on card counting expectation values."""
+    def __init__(self):
+        from collections import Counter
+        self.Counter = Counter
+
+    def play(self, info):
+        c = self.Counter(info.deck)
+        if info.bestFold(self.player)[1] > sum([s*c[s]/len(info.deck) for s in self.player.stack]):
+            return 'Hit me'
+        else:
+            return 'fold'
+
+class StandardCruel:
+    """This strategy folds based on card counting expectation values."""
+    def __init__(self, malice, caution):
+        from collections import Counter
+        self.Counter = Counter
+        self.malice = malice
+        self.caution = caution
+
+    def play(self, info):
+        c = self.Counter(info.deck)
+
+        numPlayers = info.noPlayers
+        diePoints = (60/numPlayers) + 1
+        myIndex = self.player.index()
+
+        hitPoints = []
+        for i in range(myIndex+1, myIndex+numPlayers):
+            hitPoints.append(diePoints - info.players[i%numPlayers].getScore())
+
+        pkill = 0
+        for i, hp in enumerate(hitPoints):
+            if hp < info.bestFold(self.player)[1]:
+                pkill += sum([c[s]/len(info.deck) for s in info.players[i].stack if s >= hp])
+            else:
+                break
+
+        myHP = diePoints - self.player.getScore()
+        pdeath = sum([c[s]/len(info.deck) for s in self.player.stack if s >= myHP])
+
+        if info.bestFold(self.player)[1] + self.malice*pkill - self.caution*pdeath > sum([s*c[s]/len(info.deck) for s in self.player.stack]):
+            return 'Hit me'
+        else:
+            return 'fold'
+
 class CruelFold:
     def __init__(self, scared=0.23, malice=0.5):
         from collections import Counter
@@ -96,4 +143,33 @@ class CruelFoldNoCount:
             return 'Hit me'
         else:
             return 'fold'
+
+class Magician:
+    def play(self, info):
+        import random
+        randState = random.getstate()
+        myCard = info.draw()
+        random.setstate(randState)
+        if myCard in self.player.stack:
+            return "fold"
+        else:
+            return "hit"
+
+class Wizard:
+    def play(self, info):
+        if len(self.player.stack)==10:
+            return "fold"
+        import random
+        randState = random.getstate()
+        i = 0
+        card = info.draw()
+        while card in self.player.stack and i<1000:
+            i+=1
+            card = info.draw()
+        if i==1000:
+            return "fold"
+        random.setstate(randState)
+        for j in range(i):
+            info.draw()
+        return "hit"
 
