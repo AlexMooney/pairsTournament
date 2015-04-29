@@ -92,6 +92,57 @@ class OverThinker:
         else :
             return "Hit"
 
+
+ class OverThinkerJrTHEDESTROYER:
+    #THIS BOT IS GONNA LOSE HARD, Y'ALL, I WROTE IT POORLY IN LIKE FIFTEEN MINUTES
+    def __init__(self):
+        from collections import Counter
+        self.Counter = Counter
+        
+
+
+    def play(self, info):
+        #get best fold as tuple (playerIndex, card)
+        best      = info.bestFold(self.player)
+        c = self.Counter(info.deck) #Allows card counting. Lame.
+        
+        
+        #get score information
+        highscore = max(p.getScore() for p in info.players)
+        myscore   = self.player.getScore()
+
+        #get board state
+        StackSums = [sum(p.stack) for p in info.players]
+        StackList = []
+        for p in info.players:
+            StackList.extend(p.stack) #making StackList a list of numbers, not a list of lists        
+        Scores    = [p.getScore() for p in info.players]
+        NumTens   = StackList.count(10)
+        NumNines  = StackList.count(9)
+        NumEights = StackList.count(8)
+
+        
+
+        #establish strategy
+
+        if max(self.player.stack) <= 4:
+            return "Hit" #It's fine.
+
+        if max(StackSums) >= 17 and sum(self.player.stack) < 17:
+            return "Hit" #trying to implement a risk-seeking strategy that hopes others fold or lose
             
+
+            if sum(self.player.stack) > 17:
+                if c[10] >= 5 and self.player.stack.count(10) == 0:
+                    return "Hit" #gulp
+                elif c[9] >= 5 and self.player.stack.count(9) == 0:
+                    return "Hit" #gulp
+                elif c[8] >= 4 and self.player.stack.count(8) == 0:
+                    return "Hit" #gulp
+                else:
+                    return best                
+            else:
+                return "Hit"
+           
             
         

@@ -222,7 +222,7 @@ class ExpProb:
 
 class Weights:
 
-    def __init__(self, mult = 1.6, weight = "log", term = False, eps = 0.01,
+    def __init__(self, mult = 1.6, weight = "log", term = True, eps = 0.01,
                  exp = 0.5):
         self.burn = 5
         self.term = term
