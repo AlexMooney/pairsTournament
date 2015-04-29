@@ -93,7 +93,7 @@ class OverThinker:
             return "Hit"
 
 
- class OverThinkerJrTHEDESTROYER:
+class OverThinkerJrTHEDESTROYER:
     #THIS BOT IS GONNA LOSE HARD, Y'ALL, I WROTE IT POORLY IN LIKE FIFTEEN MINUTES
     def __init__(self):
         from collections import Counter
