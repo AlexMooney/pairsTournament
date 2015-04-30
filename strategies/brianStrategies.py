@@ -1,6 +1,7 @@
 from __future__ import division
 from math import ceil
 from copy import copy
+import numpy
 
 class FoldLowWithHigh:
     def __init__(self, fold, hand):
@@ -104,3 +105,27 @@ class noPeek:
              return best
         else:
              return "booger"
+
+class trad:
+    '''
+    takes low cards.
+    '''
+
+    def play(self, info):
+        deck = info.deck
+        hand = tuple(self.player.stack)
+        best = info.bestFold(self.player)
+        points = tuple(self.player.points)
+        opp = [pl for pl in info.players if pl != self.player]
+        if sum(points) + max(hand) < 11:
+            return "booger"
+        elif sum([self._p_deal(c, deck) * c for c in hand]) > best[1] + 1 and sum([1 if sum([self._p_deal(c, deck) * c for c in hand]) > sum([self._p_deal(c, deck) * c for c in p.stack])  else 0 for p in opp] ) >= (info.noPlayers - 1):
+            return best
+        elif sum([self._p_deal(c, deck) * (c + sum(points) >=11) for c in hand]) > 1 - numpy.product([ 1 - sum([self._p_deal(c, deck) * (c + sum(p.points) >=11) for c in p.stack])  for p in opp] ):
+            return best
+        else:
+            return "booger"
+
+    def _p_deal(self, c, deck):
+        return deck.count(c) / len(deck)
+

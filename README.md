@@ -62,18 +62,41 @@ You write a `Strategy` class to compete with those written by other players.  Th
 
 ## Tournament Results
 --------------------------------
+### Continuous Pairs
 Games Played:   19100
 
-        Lost    Percent
-Alex    4718    0.25
-Chris   3863    0.20
-Brian   5347    0.28
-Danni   5172    0.27
+||      Lost|    Percent|
+|-------|-------:|------:|
+|Alex|    4718|    0.25|
+|Chris|   3863|    0.20|
+|Brian|   5347|    0.28|
+|Danni |  5172|    0.27|
 
-        P(best) P(worst)
-Alex    0.00    0.00
-Chris   1.00    0.00
-Brian   0.00    0.95
-Danni   0.00    0.05
-Stopping early due to high probabilities of best and worst.  (Threshold set to 0.95)
+||        P(best)| P(worst)|
+|-------|-------:|------:|
+|Alex|    0.00|    0.00|
+|Chris|   1.00|    0.00|
+|Brian|   0.00|    0.95|
+|Danni|   0.00|    0.05|
 
+--------------------------------
+### Standard Pairs
+Games Played: 38000
+
+||            Lost|      Percent|   
+|-------|-------:|------:|
+|Michael    | 6609 |     0.174     
+|Brian      | 6564 |     0.173     
+|Chris      | 5777 |     0.152     
+|Alex       | 6186 |     0.163     
+|Danni      | 6001 |     0.158     
+|Dave       | 6863 |     0.181     
+
+||            P(best) |  P(worst)  |
+|-------|-------:|------:|
+|Michael|     0.000   |  0.016  |   
+|Brian  |     0.000   |  0.005  |   
+|Chris  |     0.975   |  0.000  |   
+|Alex   |     0.000   |  0.000  |   
+|Danni  |     0.025   |  0.000  |   
+|Dave   |     0.000   |  0.979 | 
